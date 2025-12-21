@@ -1,0 +1,28 @@
+/* Styling Global */
+body {
+  background-color: #f8f9fa; /* Abu-abu terang bawaan bootstrap */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Override Warna Bootstrap (Opsional) */
+.btn-warmindo {
+  background-color: #D32F2F; /* Merah Warmindo */
+  color: white;
+  border: none;
+}
+
+.btn-warmindo:hover {
+  background-color: #b71c1c;
+  color: white;
+}
+
+.text-warmindo {
+  color: #D32F2F;
+  font-weight: bold;
+}
+
+.price-tag {
+  color: #FBC02D; /* Kuning Emas */
+  font-weight: bold;
+  font-size: 1.1rem;
+}

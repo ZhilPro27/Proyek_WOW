@@ -1,0 +1,657 @@
+{"level":"info","message":"Server is running on http://localhost:3000","module":"Server","timestamp":"2025-12-21T14:16:10.790Z"}
+{"level":"warn","message":"404 Not Found - /","module":"Server","timestamp":"2025-12-21T14:16:30.629Z"}
+{"context":"HTTP","duration":"11 ms","ip":"::1","level":"warn","message":"GET / 404 - 11ms","method":"GET","timestamp":"2025-12-21T14:16:30.641Z","url":"/"}
+{"level":"warn","message":"404 Not Found - /favicon.ico","module":"Server","timestamp":"2025-12-21T14:16:30.765Z"}
+{"context":"HTTP","duration":"3 ms","ip":"::1","level":"warn","message":"GET /favicon.ico 404 - 3ms","method":"GET","timestamp":"2025-12-21T14:16:30.767Z","url":"/favicon.ico"}
+{"level":"info","message":"Server is running on http://localhost:3000","module":"Server","timestamp":"2025-12-21T14:34:47.588Z"}
+{"level":"warn","message":"404 Not Found - /","module":"Server","timestamp":"2025-12-21T14:37:07.117Z"}
+{"context":"HTTP","duration":"10 ms","ip":"::1","level":"warn","message":"GET / 404 - 10ms","method":"GET","timestamp":"2025-12-21T14:37:07.128Z","url":"/"}
+{"context":"UserController","level":"debug","message":"Database connection established","timestamp":"2025-12-21T14:37:43.318Z"}
+{"context":"UserModel","level":"debug","message":"Fetching all users from the database","timestamp":"2025-12-21T14:37:43.319Z"}
+{"context":"UserModel","level":"info","message":"Fetched 0 users","timestamp":"2025-12-21T14:37:43.330Z"}
+{"context":"UserController","level":"debug","message":"Fetching all users","timestamp":"2025-12-21T14:37:43.331Z"}
+{"context":"HTTP","duration":"74 ms","ip":"::1","level":"http","message":"GET /api/user 200 - 74ms","method":"GET","timestamp":"2025-12-21T14:37:43.337Z","url":"/api/user"}
+{"level":"info","message":"Server is running on http://localhost:3000","module":"Server","timestamp":"2025-12-21T14:38:14.778Z"}
+{"context":"UserController","level":"debug","message":"Database connection established","timestamp":"2025-12-21T14:38:17.772Z"}
+{"context":"UserModel","level":"debug","message":"Fetching all users from the database","timestamp":"2025-12-21T14:38:17.773Z"}
+{"context":"UserModel","level":"info","message":"Fetched 0 users","timestamp":"2025-12-21T14:38:17.777Z"}
+{"context":"UserController","level":"debug","message":"Fetching all users","timestamp":"2025-12-21T14:38:17.778Z"}
+{"context":"HTTP","duration":"61 ms","ip":"::1","level":"http","message":"GET /api/user 200 - 61ms","method":"GET","timestamp":"2025-12-21T14:38:17.788Z","url":"/api/user"}
+{"level":"info","message":"Server is running on http://localhost:3000","module":"Server","timestamp":"2025-12-21T14:39:24.322Z"}
+{"context":"UserController","level":"debug","message":"Database connection established","timestamp":"2025-12-21T14:39:26.674Z"}
+{"context":"UserModel","level":"debug","message":"Fetching all users from the database","timestamp":"2025-12-21T14:39:26.675Z"}
+{"context":"UserModel","level":"info","message":"Fetched 0 users","timestamp":"2025-12-21T14:39:26.680Z"}
+{"context":"UserController","level":"debug","message":"Fetching all users","timestamp":"2025-12-21T14:39:26.680Z"}
+{"context":"UserController","level":"debug","message":"Database connection released","timestamp":"2025-12-21T14:39:26.687Z"}
+{"context":"HTTP","duration":"61 ms","ip":"::1","level":"http","message":"GET /api/user 200 - 61ms","method":"GET","timestamp":"2025-12-21T14:39:26.689Z","url":"/api/user"}
+{"context":"UserController","level":"debug","message":"Database connection established","timestamp":"2025-12-21T14:39:40.059Z"}
+{"context":"UserModel","level":"debug","message":"Fetching all users from the database","timestamp":"2025-12-21T14:39:40.060Z"}
+{"context":"UserModel","level":"info","message":"Fetched 0 users","timestamp":"2025-12-21T14:39:40.063Z"}
+{"context":"UserController","level":"debug","message":"Fetching all users","timestamp":"2025-12-21T14:39:40.065Z"}
+{"context":"UserController","level":"debug","message":"Database connection released","timestamp":"2025-12-21T14:39:40.071Z"}
+{"context":"HTTP","duration":"19 ms","ip":"::1","level":"http","message":"GET /api/user 200 - 19ms","method":"GET","timestamp":"2025-12-21T14:39:40.076Z","url":"/api/user"}
+{"level":"info","message":"Server is running on http://localhost:3000","module":"Server","timestamp":"2025-12-21T14:44:54.767Z"}
+{"context":"UserController","level":"debug","message":"Database connection established","timestamp":"2025-12-21T14:44:57.251Z"}
+{"context":"UserModel","level":"debug","message":"Fetching all users from the database","timestamp":"2025-12-21T14:44:57.252Z"}
+{"context":"UserModel","level":"info","message":"Fetched 0 users","timestamp":"2025-12-21T14:44:57.257Z"}
+{"context":"UserController","level":"debug","message":"Fetching all users","timestamp":"2025-12-21T14:44:57.257Z"}
+{"context":"UserController","level":"debug","message":"Database connection released","timestamp":"2025-12-21T14:44:57.262Z"}
+{"context":"HTTP","duration":"59 ms","ip":"::1","level":"http","message":"GET /api/user 200 - 59ms","method":"GET","timestamp":"2025-12-21T14:44:57.265Z","url":"/api/user"}
+{"context":"UserController","level":"debug","message":"Database connection established","timestamp":"2025-12-21T14:45:24.561Z"}
+{"context":"UserModel","level":"debug","message":"Fetching user with ID: 1","timestamp":"2025-12-21T14:45:24.562Z"}
+{"context":"UserModel","level":"warn","message":"No user found with ID: 1","timestamp":"2025-12-21T14:45:24.567Z"}
+{"context":"UserController","level":"warn","message":"User not found with ID: 1","timestamp":"2025-12-21T14:45:24.567Z"}
+{"context":"UserController","level":"debug","message":"Database connection released","timestamp":"2025-12-21T14:45:24.568Z"}
+{"context":"HTTP","duration":"9 ms","ip":"::1","level":"warn","message":"GET /api/user/1 404 - 9ms","method":"GET","timestamp":"2025-12-21T14:45:24.569Z","url":"/api/user/1"}
+{"context":"UserController","level":"debug","message":"Database connection established","timestamp":"2025-12-21T14:47:01.919Z"}
+{"context":"UserController","level":"debug","message":"User password hashed","timestamp":"2025-12-21T14:47:02.052Z"}
+{"context":"UserModel","level":"debug","message":"Creating new user with data: {\"username\":\"admin\",\"password\":\"$2b$10$uHf.DPGz2GuHYIY1.CGm9.cyN5DKqZj4bqOosdHpVpSfXm5p0CKc6\",\"role\":\"admin\"}","timestamp":"2025-12-21T14:47:02.052Z"}
+{"context":"UserModel","level":"info","message":"User created with ID: 1","timestamp":"2025-12-21T14:47:02.100Z"}
+{"context":"UserController","level":"debug","message":"User created with ID: 1","timestamp":"2025-12-21T14:47:02.103Z"}
+{"context":"UserController","level":"debug","message":"Database connection released","timestamp":"2025-12-21T14:47:02.104Z"}
+{"context":"HTTP","duration":"187 ms","ip":"::1","level":"http","message":"POST /api/user 201 - 187ms","method":"POST","timestamp":"2025-12-21T14:47:02.105Z","url":"/api/user"}
+{"context":"UserController","level":"debug","message":"Database connection established","timestamp":"2025-12-21T14:47:37.539Z"}
+{"context":"UserModel","level":"debug","message":"Fetching all users from the database","timestamp":"2025-12-21T14:47:37.539Z"}
+{"context":"UserModel","level":"info","message":"Fetched 1 users","timestamp":"2025-12-21T14:47:37.541Z"}
+{"context":"UserController","level":"debug","message":"Fetching all users","timestamp":"2025-12-21T14:47:37.542Z"}
+{"context":"UserController","level":"debug","message":"Database connection released","timestamp":"2025-12-21T14:47:37.542Z"}
+{"context":"HTTP","duration":"5 ms","ip":"::1","level":"http","message":"GET /api/user 200 - 5ms","method":"GET","timestamp":"2025-12-21T14:47:37.543Z","url":"/api/user"}
+{"context":"UserController","level":"debug","message":"Database connection established","timestamp":"2025-12-21T14:48:34.615Z"}
+{"context":"UserController","level":"error","message":"Error updating user with ID 1: Cannot read properties of undefined (reading 'password')","timestamp":"2025-12-21T14:48:34.616Z"}
+{"context":"UserController","level":"debug","message":"Database connection released","timestamp":"2025-12-21T14:48:34.617Z"}
+{"context":"HTTP","duration":"3 ms","ip":"::1","level":"error","message":"PUT /api/user/1 500 - 3ms","method":"PUT","timestamp":"2025-12-21T14:48:34.618Z","url":"/api/user/1"}
+{"level":"info","message":"Server is running on http://localhost:3000","module":"Server","timestamp":"2025-12-21T14:50:38.056Z"}
+{"context":"UserController","level":"debug","message":"Database connection established","timestamp":"2025-12-21T14:50:40.515Z"}
+{"context":"UserController","level":"error","message":"Error updating user with ID 1: Cannot read properties of undefined (reading 'password')","timestamp":"2025-12-21T14:50:40.518Z"}
+{"context":"UserController","level":"debug","message":"Database connection released","timestamp":"2025-12-21T14:50:40.522Z"}
+{"context":"HTTP","duration":"60 ms","ip":"::1","level":"error","message":"PUT /api/user/1 500 - 60ms","method":"PUT","timestamp":"2025-12-21T14:50:40.524Z","url":"/api/user/1"}
+{"level":"info","message":"Server is running on http://localhost:3000","module":"Server","timestamp":"2025-12-21T14:51:00.881Z"}
+{"context":"UserController","level":"debug","message":"Database connection established","timestamp":"2025-12-21T14:51:02.709Z"}
+{"context":"UserController","level":"error","message":"Error updating user with ID 1: Cannot read properties of undefined (reading 'password')","timestamp":"2025-12-21T14:51:02.721Z"}
+{"context":"UserController","level":"debug","message":"Database connection released","timestamp":"2025-12-21T14:51:02.749Z"}
+{"context":"HTTP","duration":"223 ms","ip":"::1","level":"error","message":"PUT /api/user/1 500 - 223ms","method":"PUT","timestamp":"2025-12-21T14:51:02.763Z","url":"/api/user/1"}
+{"level":"info","message":"Server is running on http://localhost:3000","module":"Server","timestamp":"2025-12-21T14:52:41.187Z"}
+{"context":"UserController","level":"debug","message":"Database connection established","timestamp":"2025-12-21T14:53:07.000Z"}
+{"context":"UserController","level":"debug","message":"User password hashed for update","timestamp":"2025-12-21T14:53:07.108Z"}
+{"context":"UserModel","level":"debug","message":"Updating user with ID: 1 with data: {\"username\":\"Super Admin\",\"password\":\"$2b$10$A9..RPEzuzIpOOyhEiVnOejmW3ezrqF797SpnsIfuv/0fwkuTh7za\"}","timestamp":"2025-12-21T14:53:07.109Z"}
+{"context":"UserController","level":"error","message":"Error updating user with ID 1: Bind parameters must not contain undefined. To pass SQL NULL specify JS null","timestamp":"2025-12-21T14:53:07.111Z"}
+{"context":"UserController","level":"debug","message":"Database connection released","timestamp":"2025-12-21T14:53:07.115Z"}
+{"context":"HTTP","duration":"163 ms","ip":"::1","level":"error","message":"PUT /api/user/1 500 - 163ms","method":"PUT","timestamp":"2025-12-21T14:53:07.117Z","url":"/api/user/1"}
+{"context":"UserController","level":"debug","message":"Database connection established","timestamp":"2025-12-21T14:53:30.887Z"}
+{"context":"UserController","level":"debug","message":"User password hashed for update","timestamp":"2025-12-21T14:53:30.972Z"}
+{"context":"UserModel","level":"debug","message":"Updating user with ID: 1 with data: {\"username\":\"Super Admin\",\"password\":\"$2b$10$dsHDiFXy/e/t6XjzwlibXuSSofXpMbFkkUGsFpPvWs18c6TvH1/hu\",\"role\":\"admin\"}","timestamp":"2025-12-21T14:53:30.973Z"}
+{"context":"UserModel","level":"info","message":"User with ID: 1 updated successfully","timestamp":"2025-12-21T14:53:31.017Z"}
+{"context":"UserController","level":"debug","message":"User updated with ID: 1","timestamp":"2025-12-21T14:53:31.019Z"}
+{"context":"UserController","level":"debug","message":"Database connection released","timestamp":"2025-12-21T14:53:31.020Z"}
+{"context":"HTTP","duration":"133 ms","ip":"::1","level":"http","message":"PUT /api/user/1 200 - 133ms","method":"PUT","timestamp":"2025-12-21T14:53:31.021Z","url":"/api/user/1"}
+{"context":"UserController","level":"debug","message":"Database connection established","timestamp":"2025-12-21T14:54:16.434Z"}
+{"context":"UserController","level":"debug","message":"User password hashed","timestamp":"2025-12-21T14:54:16.510Z"}
+{"context":"UserModel","level":"debug","message":"Creating new user with data: {\"username\":\"admin\",\"password\":\"$2b$10$F3TvKA5FckV.GRwuTH9Iv.4fimcVNnKByCx.Wltk7Jx6JKcF93NeW\",\"role\":\"admin\"}","timestamp":"2025-12-21T14:54:16.510Z"}
+{"context":"UserModel","level":"info","message":"User created with ID: 2","timestamp":"2025-12-21T14:54:16.512Z"}
+{"context":"UserController","level":"debug","message":"User created with ID: 2","timestamp":"2025-12-21T14:54:16.556Z"}
+{"context":"UserController","level":"debug","message":"Database connection released","timestamp":"2025-12-21T14:54:16.557Z"}
+{"context":"HTTP","duration":"125 ms","ip":"::1","level":"http","message":"POST /api/user 201 - 125ms","method":"POST","timestamp":"2025-12-21T14:54:16.558Z","url":"/api/user"}
+{"context":"UserController","level":"debug","message":"Database connection established","timestamp":"2025-12-21T14:54:23.747Z"}
+{"context":"UserModel","level":"debug","message":"Deleting user with ID: 2","timestamp":"2025-12-21T14:54:23.749Z"}
+{"context":"UserModel","level":"info","message":"User with ID: 2 deleted successfully","timestamp":"2025-12-21T14:54:23.755Z"}
+{"context":"UserController","level":"debug","message":"User deleted with ID: 2","timestamp":"2025-12-21T14:54:23.758Z"}
+{"context":"UserController","level":"debug","message":"Database connection released","timestamp":"2025-12-21T14:54:23.761Z"}
+{"context":"HTTP","duration":"15 ms","ip":"::1","level":"http","message":"DELETE /api/user/2 200 - 15ms","method":"DELETE","timestamp":"2025-12-21T14:54:23.766Z","url":"/api/user/2"}
+{"context":"CategoriesController","level":"debug","message":"Database connection established","timestamp":"2025-12-21T14:55:18.636Z"}
+{"context":"CategoriesModel","level":"debug","message":"Fetching all categories from the database","timestamp":"2025-12-21T14:55:18.636Z"}
+{"context":"CategoriesModel","level":"info","message":"Fetched 0 categories","timestamp":"2025-12-21T14:55:18.641Z"}
+{"context":"CategoriesController","level":"debug","message":"Fetching all categories","timestamp":"2025-12-21T14:55:18.641Z"}
+{"context":"CategoriesController","level":"debug","message":"Database connection released","timestamp":"2025-12-21T14:55:18.643Z"}
+{"context":"HTTP","duration":"9 ms","ip":"::1","level":"http","message":"GET /api/categories 200 - 9ms","method":"GET","timestamp":"2025-12-21T14:55:18.644Z","url":"/api/categories"}
+{"context":"CategoriesController","level":"debug","message":"Database connection established","timestamp":"2025-12-21T14:55:55.944Z"}
+{"context":"CategoriesModel","level":"debug","message":"Fetching category with ID: 1","timestamp":"2025-12-21T14:55:55.944Z"}
+{"context":"CategoriesModel","level":"warn","message":"No category found with ID: 1","timestamp":"2025-12-21T14:55:55.946Z"}
+{"context":"CategoriesController","level":"warn","message":"Category not found with ID: 1","timestamp":"2025-12-21T14:55:55.946Z"}
+{"context":"CategoriesController","level":"debug","message":"Database connection released","timestamp":"2025-12-21T14:55:55.947Z"}
+{"context":"HTTP","duration":"4 ms","ip":"::1","level":"warn","message":"GET /api/categories/1 404 - 4ms","method":"GET","timestamp":"2025-12-21T14:55:55.947Z","url":"/api/categories/1"}
+{"context":"CategoriesController","level":"debug","message":"Database connection established","timestamp":"2025-12-21T14:57:07.075Z"}
+{"context":"CategoriesModel","level":"debug","message":"Creating new category with data: {\"name\":\"Makanan\"}","timestamp":"2025-12-21T14:57:07.076Z"}
+{"context":"CategoriesModel","level":"info","message":"Category created with ID: 1","timestamp":"2025-12-21T14:57:07.078Z"}
+{"context":"CategoriesController","level":"debug","message":"Category created with ID: 1","timestamp":"2025-12-21T14:57:07.118Z"}
+{"context":"CategoriesController","level":"debug","message":"Database connection released","timestamp":"2025-12-21T14:57:07.119Z"}
+{"context":"HTTP","duration":"44 ms","ip":"::1","level":"http","message":"POST /api/categories 201 - 44ms","method":"POST","timestamp":"2025-12-21T14:57:07.119Z","url":"/api/categories"}
+{"context":"CategoriesController","level":"debug","message":"Database connection established","timestamp":"2025-12-21T14:57:12.511Z"}
+{"context":"CategoriesModel","level":"debug","message":"Creating new category with data: {\"name\":\"Minuman\"}","timestamp":"2025-12-21T14:57:12.513Z"}
+{"context":"CategoriesModel","level":"info","message":"Category created with ID: 2","timestamp":"2025-12-21T14:57:12.515Z"}
+{"context":"CategoriesController","level":"debug","message":"Category created with ID: 2","timestamp":"2025-12-21T14:57:12.555Z"}
+{"context":"CategoriesController","level":"debug","message":"Database connection released","timestamp":"2025-12-21T14:57:12.556Z"}
+{"context":"HTTP","duration":"47 ms","ip":"::1","level":"http","message":"POST /api/categories 201 - 47ms","method":"POST","timestamp":"2025-12-21T14:57:12.557Z","url":"/api/categories"}
+{"context":"CategoriesController","level":"debug","message":"Database connection established","timestamp":"2025-12-21T14:57:16.036Z"}
+{"context":"CategoriesModel","level":"debug","message":"Fetching all categories from the database","timestamp":"2025-12-21T14:57:16.036Z"}
+{"context":"CategoriesModel","level":"info","message":"Fetched 2 categories","timestamp":"2025-12-21T14:57:16.038Z"}
+{"context":"CategoriesController","level":"debug","message":"Fetching all categories","timestamp":"2025-12-21T14:57:16.038Z"}
+{"context":"CategoriesController","level":"debug","message":"Database connection released","timestamp":"2025-12-21T14:57:16.040Z"}
+{"context":"HTTP","duration":"5 ms","ip":"::1","level":"http","message":"GET /api/categories 200 - 5ms","method":"GET","timestamp":"2025-12-21T14:57:16.041Z","url":"/api/categories"}
+{"context":"CategoriesController","level":"debug","message":"Database connection established","timestamp":"2025-12-21T14:57:20.292Z"}
+{"context":"CategoriesModel","level":"debug","message":"Fetching category with ID: 1","timestamp":"2025-12-21T14:57:20.292Z"}
+{"context":"CategoriesModel","level":"info","message":"Category found: {\"id\":1,\"name\":\"Makanan\",\"created_at\":\"2025-12-21T14:57:07.000Z\"}","timestamp":"2025-12-21T14:57:20.294Z"}
+{"context":"CategoriesController","level":"debug","message":"Category fetched with ID: 1","timestamp":"2025-12-21T14:57:20.294Z"}
+{"context":"CategoriesController","level":"debug","message":"Database connection released","timestamp":"2025-12-21T14:57:20.295Z"}
+{"context":"HTTP","duration":"5 ms","ip":"::1","level":"http","message":"GET /api/categories/1 200 - 5ms","method":"GET","timestamp":"2025-12-21T14:57:20.296Z","url":"/api/categories/1"}
+{"context":"CategoriesController","level":"debug","message":"Database connection established","timestamp":"2025-12-21T15:02:21.429Z"}
+{"context":"CategoriesModel","level":"debug","message":"Creating new category with data: {\"name\":\"tes\"}","timestamp":"2025-12-21T15:02:21.430Z"}
+{"context":"CategoriesModel","level":"info","message":"Category created with ID: 3","timestamp":"2025-12-21T15:02:21.431Z"}
+{"context":"CategoriesController","level":"debug","message":"Category created with ID: 3","timestamp":"2025-12-21T15:02:21.471Z"}
+{"context":"CategoriesController","level":"debug","message":"Database connection released","timestamp":"2025-12-21T15:02:21.472Z"}
+{"context":"HTTP","duration":"44 ms","ip":"::1","level":"http","message":"POST /api/categories 201 - 44ms","method":"POST","timestamp":"2025-12-21T15:02:21.473Z","url":"/api/categories"}
+{"context":"CategoriesController","level":"debug","message":"Database connection established","timestamp":"2025-12-21T15:03:11.172Z"}
+{"context":"CategoriesModel","level":"debug","message":"Updating category with ID: 3 with data: {\"name\":\"Tes update\"}","timestamp":"2025-12-21T15:03:11.173Z"}
+{"context":"CategoriesModel","level":"info","message":"Category with ID: 3 updated successfully","timestamp":"2025-12-21T15:03:11.213Z"}
+{"context":"CategoriesController","level":"debug","message":"Category updated with ID: 3","timestamp":"2025-12-21T15:03:11.215Z"}
+{"context":"CategoriesController","level":"debug","message":"Database connection released","timestamp":"2025-12-21T15:03:11.217Z"}
+{"context":"HTTP","duration":"46 ms","ip":"::1","level":"http","message":"PUT /api/categories/3 200 - 46ms","method":"PUT","timestamp":"2025-12-21T15:03:11.218Z","url":"/api/categories/3"}
+{"context":"CategoriesController","level":"debug","message":"Database connection established","timestamp":"2025-12-21T15:03:34.571Z"}
+{"context":"CategoriesModel","level":"debug","message":"Deleting category with ID: 3","timestamp":"2025-12-21T15:03:34.572Z"}
+{"context":"CategoriesModel","level":"info","message":"Category with ID: 3 deleted successfully","timestamp":"2025-12-21T15:03:34.574Z"}
+{"context":"CategoriesController","level":"debug","message":"Category deleted with ID: 3","timestamp":"2025-12-21T15:03:34.614Z"}
+{"context":"CategoriesController","level":"debug","message":"Database connection released","timestamp":"2025-12-21T15:03:34.615Z"}
+{"context":"HTTP","duration":"44 ms","ip":"::1","level":"http","message":"DELETE /api/categories/3 200 - 44ms","method":"DELETE","timestamp":"2025-12-21T15:03:34.615Z","url":"/api/categories/3"}
+{"context":"ProductController","level":"debug","message":"Database connection established","timestamp":"2025-12-21T15:04:03.426Z"}
+{"context":"ProductModel","level":"debug","message":"Fetching all products from the database","timestamp":"2025-12-21T15:04:03.426Z"}
+{"context":"ProductModel","level":"info","message":"Fetched 0 products","timestamp":"2025-12-21T15:04:03.429Z"}
+{"context":"ProductController","level":"debug","message":"Fetching all products","timestamp":"2025-12-21T15:04:03.429Z"}
+{"context":"ProductController","level":"debug","message":"Database connection released","timestamp":"2025-12-21T15:04:03.431Z"}
+{"context":"HTTP","duration":"6 ms","ip":"::1","level":"http","message":"GET /api/product 200 - 6ms","method":"GET","timestamp":"2025-12-21T15:04:03.431Z","url":"/api/product"}
+{"context":"ProductController","level":"debug","message":"Database connection established","timestamp":"2025-12-21T15:04:18.884Z"}
+{"context":"ProductModel","level":"debug","message":"Fetching product with ID: 1","timestamp":"2025-12-21T15:04:18.884Z"}
+{"context":"ProductModel","level":"warn","message":"No product found with ID: 1","timestamp":"2025-12-21T15:04:18.886Z"}
+{"context":"ProductController","level":"warn","message":"Product not found with ID: 1","timestamp":"2025-12-21T15:04:18.886Z"}
+{"context":"ProductController","level":"debug","message":"Database connection released","timestamp":"2025-12-21T15:04:18.886Z"}
+{"context":"HTTP","duration":"4 ms","ip":"::1","level":"warn","message":"GET /api/product/1 404 - 4ms","method":"GET","timestamp":"2025-12-21T15:04:18.887Z","url":"/api/product/1"}
+{"context":"ProductController","level":"debug","message":"Database connection established","timestamp":"2025-12-21T15:07:41.478Z"}
+{"context":"ProductModel","level":"debug","message":"Creating new product with data: {\"categories_id\":\"1\",\"name\":\"tes\",\"description\":null,\"base_price\":1000,\"image_url\":null,\"is_available\":true}","timestamp":"2025-12-21T15:07:41.479Z"}
+{"context":"ProductController","level":"error","message":"Error creating product: Bind parameters must not contain undefined. To pass SQL NULL specify JS null","timestamp":"2025-12-21T15:07:41.480Z"}
+{"context":"ProductController","level":"debug","message":"Database connection released","timestamp":"2025-12-21T15:07:41.482Z"}
+{"context":"HTTP","duration":"5 ms","ip":"::1","level":"error","message":"POST /api/product 500 - 5ms","method":"POST","timestamp":"2025-12-21T15:07:41.483Z","url":"/api/product"}
+{"context":"ProductController","level":"debug","message":"Database connection established","timestamp":"2025-12-21T15:09:11.504Z"}
+{"context":"ProductModel","level":"debug","message":"Creating new product with data: {\"categories_id\":\"1\",\"name\":\"tes\",\"description\":\"tes\",\"base_price\":1000,\"image_url\":null,\"is_available\":true}","timestamp":"2025-12-21T15:09:11.505Z"}
+{"context":"ProductController","level":"error","message":"Error creating product: Bind parameters must not contain undefined. To pass SQL NULL specify JS null","timestamp":"2025-12-21T15:09:11.506Z"}
+{"context":"ProductController","level":"debug","message":"Database connection released","timestamp":"2025-12-21T15:09:11.506Z"}
+{"context":"HTTP","duration":"4 ms","ip":"::1","level":"error","message":"POST /api/product 500 - 4ms","method":"POST","timestamp":"2025-12-21T15:09:11.507Z","url":"/api/product"}
+{"context":"ProductController","level":"debug","message":"Database connection established","timestamp":"2025-12-21T15:09:19.818Z"}
+{"context":"ProductModel","level":"debug","message":"Creating new product with data: {\"categories_id\":\"1\",\"name\":\"tes\",\"description\":\"tes\",\"base_price\":1000,\"image_url\":\"tes\",\"is_available\":true}","timestamp":"2025-12-21T15:09:19.819Z"}
+{"context":"ProductController","level":"error","message":"Error creating product: Bind parameters must not contain undefined. To pass SQL NULL specify JS null","timestamp":"2025-12-21T15:09:19.820Z"}
+{"context":"ProductController","level":"debug","message":"Database connection released","timestamp":"2025-12-21T15:09:19.821Z"}
+{"context":"HTTP","duration":"3 ms","ip":"::1","level":"error","message":"POST /api/product 500 - 3ms","method":"POST","timestamp":"2025-12-21T15:09:19.821Z","url":"/api/product"}
+{"context":"ProductController","level":"debug","message":"Database connection established","timestamp":"2025-12-21T15:10:52.490Z"}
+{"context":"ProductModel","level":"debug","message":"Creating new product with data: {\"categories_id\":\"1\",\"name\":\"tes\",\"description\":\"NULL\",\"base_price\":1000,\"image_url\":\"NULL\",\"is_available\":\"TRUE\"}","timestamp":"2025-12-21T15:10:52.491Z"}
+{"context":"ProductController","level":"error","message":"Error creating product: Bind parameters must not contain undefined. To pass SQL NULL specify JS null","timestamp":"2025-12-21T15:10:52.493Z"}
+{"context":"ProductController","level":"debug","message":"Database connection released","timestamp":"2025-12-21T15:10:52.494Z"}
+{"context":"HTTP","duration":"4 ms","ip":"::1","level":"error","message":"POST /api/product 500 - 4ms","method":"POST","timestamp":"2025-12-21T15:10:52.495Z","url":"/api/product"}
+{"level":"info","message":"Server is running on http://localhost:3000","module":"Server","timestamp":"2025-12-21T15:11:31.250Z"}
+{"context":"ProductController","level":"debug","message":"Database connection established","timestamp":"2025-12-21T15:11:37.646Z"}
+{"context":"ProductModel","level":"debug","message":"Creating new product with data: {\"categories_id\":\"1\",\"name\":\"tes\",\"description\":\"NULL\",\"base_price\":1000,\"image_url\":\"NULL\",\"is_available\":\"TRUE\"}","timestamp":"2025-12-21T15:11:37.651Z"}
+{"context":"ProductController","level":"error","message":"Error creating product: Bind parameters must not contain undefined. To pass SQL NULL specify JS null","timestamp":"2025-12-21T15:11:37.654Z"}
+{"context":"ProductController","level":"debug","message":"Database connection released","timestamp":"2025-12-21T15:11:37.659Z"}
+{"context":"HTTP","duration":"146 ms","ip":"::1","level":"error","message":"POST /api/product 500 - 146ms","method":"POST","timestamp":"2025-12-21T15:11:37.661Z","url":"/api/product"}
+{"context":"ProductController","level":"debug","message":"Database connection established","timestamp":"2025-12-21T15:13:39.698Z"}
+{"context":"ProductModel","level":"debug","message":"Creating new product with data: {\"category_id\":\"1\",\"name\":\"tes\",\"description\":null,\"base_price\":1000,\"image_url\":null,\"is_available\":true}","timestamp":"2025-12-21T15:13:39.700Z"}
+{"context":"ProductModel","level":"info","message":"Product created with ID: 1","timestamp":"2025-12-21T15:13:39.705Z"}
+{"context":"ProductController","level":"debug","message":"Product created with ID: 1","timestamp":"2025-12-21T15:13:39.745Z"}
+{"context":"ProductController","level":"debug","message":"Database connection released","timestamp":"2025-12-21T15:13:39.746Z"}
+{"context":"HTTP","duration":"50 ms","ip":"::1","level":"http","message":"POST /api/product 201 - 50ms","method":"POST","timestamp":"2025-12-21T15:13:39.748Z","url":"/api/product"}
+{"context":"ProductController","level":"debug","message":"Database connection established","timestamp":"2025-12-21T15:13:50.175Z"}
+{"context":"ProductModel","level":"debug","message":"Creating new product with data: {\"category_id\":\"1\",\"name\":\"tes\",\"description\":null,\"base_price\":1000,\"image_url\":null,\"is_available\":true}","timestamp":"2025-12-21T15:13:50.176Z"}
+{"context":"ProductModel","level":"info","message":"Product created with ID: 2","timestamp":"2025-12-21T15:13:50.177Z"}
+{"context":"ProductController","level":"debug","message":"Product created with ID: 2","timestamp":"2025-12-21T15:13:50.216Z"}
+{"context":"ProductController","level":"debug","message":"Database connection released","timestamp":"2025-12-21T15:13:50.218Z"}
+{"context":"HTTP","duration":"44 ms","ip":"::1","level":"http","message":"POST /api/product 201 - 44ms","method":"POST","timestamp":"2025-12-21T15:13:50.218Z","url":"/api/product"}
+{"context":"ProductController","level":"debug","message":"Database connection established","timestamp":"2025-12-21T15:13:55.733Z"}
+{"context":"ProductModel","level":"debug","message":"Fetching all products from the database","timestamp":"2025-12-21T15:13:55.734Z"}
+{"context":"ProductModel","level":"info","message":"Fetched 2 products","timestamp":"2025-12-21T15:13:55.737Z"}
+{"context":"ProductController","level":"debug","message":"Fetching all products","timestamp":"2025-12-21T15:13:55.738Z"}
+{"context":"ProductController","level":"debug","message":"Database connection released","timestamp":"2025-12-21T15:13:55.739Z"}
+{"context":"HTTP","duration":"6 ms","ip":"::1","level":"http","message":"GET /api/product 200 - 6ms","method":"GET","timestamp":"2025-12-21T15:13:55.739Z","url":"/api/product"}
+{"context":"ProductController","level":"debug","message":"Database connection established","timestamp":"2025-12-21T15:14:02.705Z"}
+{"context":"ProductModel","level":"debug","message":"Fetching product with ID: 1","timestamp":"2025-12-21T15:14:02.706Z"}
+{"context":"ProductModel","level":"info","message":"Product found: {\"id\":1,\"category_id\":1,\"name\":\"tes\",\"description\":null,\"base_price\":\"1000.00\",\"image_url\":null,\"is_available\":1,\"created_at\":\"2025-12-21T15:13:39.000Z\"}","timestamp":"2025-12-21T15:14:02.708Z"}
+{"context":"ProductController","level":"debug","message":"Product fetched with ID: 1","timestamp":"2025-12-21T15:14:02.708Z"}
+{"context":"ProductController","level":"debug","message":"Database connection released","timestamp":"2025-12-21T15:14:02.709Z"}
+{"context":"HTTP","duration":"5 ms","ip":"::1","level":"http","message":"GET /api/product/1 200 - 5ms","method":"GET","timestamp":"2025-12-21T15:14:02.709Z","url":"/api/product/1"}
+{"context":"ProductController","level":"debug","message":"Database connection established","timestamp":"2025-12-21T15:18:12.029Z"}
+{"context":"ProductModel","level":"debug","message":"Updating product with ID: 1 with data: {\"name\":\"burger\",\"description\":null,\"base_price\":1000,\"image_url\":null,\"is_available\":true}","timestamp":"2025-12-21T15:18:12.031Z"}
+{"context":"ProductController","level":"error","message":"Error updating product with ID 1: Bind parameters must not contain undefined. To pass SQL NULL specify JS null","timestamp":"2025-12-21T15:18:12.033Z"}
+{"context":"ProductController","level":"debug","message":"Database connection released","timestamp":"2025-12-21T15:18:12.035Z"}
+{"context":"HTTP","duration":"7 ms","ip":"::1","level":"error","message":"PUT /api/product/1 500 - 7ms","method":"PUT","timestamp":"2025-12-21T15:18:12.036Z","url":"/api/product/1"}
+{"context":"ProductController","level":"debug","message":"Database connection established","timestamp":"2025-12-21T15:19:07.661Z"}
+{"context":"ProductModel","level":"debug","message":"Updating product with ID: 1 with data: {\"category_id\":\"1\",\"name\":\"burger\",\"description\":null,\"base_price\":1000,\"image_url\":null,\"is_available\":true}","timestamp":"2025-12-21T15:19:07.662Z"}
+{"context":"ProductModel","level":"info","message":"Product with ID: 1 updated successfully","timestamp":"2025-12-21T15:19:07.665Z"}
+{"context":"ProductController","level":"debug","message":"Product updated with ID: 1","timestamp":"2025-12-21T15:19:07.706Z"}
+{"context":"ProductController","level":"debug","message":"Database connection released","timestamp":"2025-12-21T15:19:07.707Z"}
+{"context":"HTTP","duration":"46 ms","ip":"::1","level":"http","message":"PUT /api/product/1 200 - 46ms","method":"PUT","timestamp":"2025-12-21T15:19:07.707Z","url":"/api/product/1"}
+{"context":"ProductController","level":"debug","message":"Database connection established","timestamp":"2025-12-21T15:19:28.632Z"}
+{"context":"ProductModel","level":"debug","message":"Deleting product with ID: 1","timestamp":"2025-12-21T15:19:28.633Z"}
+{"context":"ProductModel","level":"info","message":"Product with ID: 1 deleted successfully","timestamp":"2025-12-21T15:19:28.635Z"}
+{"context":"ProductController","level":"debug","message":"Product deleted with ID: 1","timestamp":"2025-12-21T15:19:28.675Z"}
+{"context":"ProductController","level":"debug","message":"Database connection released","timestamp":"2025-12-21T15:19:28.676Z"}
+{"context":"HTTP","duration":"45 ms","ip":"::1","level":"http","message":"DELETE /api/product/1 200 - 45ms","method":"DELETE","timestamp":"2025-12-21T15:19:28.677Z","url":"/api/product/1"}
+{"context":"ProductVariantController","level":"debug","message":"Database connection established","timestamp":"2025-12-21T15:20:38.944Z"}
+{"context":"ProductVariantModel","level":"debug","message":"Fetching all product variants from the database","timestamp":"2025-12-21T15:20:38.945Z"}
+{"context":"ProductVariantModel","level":"info","message":"Fetched 0 product variants","timestamp":"2025-12-21T15:20:38.947Z"}
+{"context":"ProductVariantController","level":"debug","message":"Fetching all product variants","timestamp":"2025-12-21T15:20:38.947Z"}
+{"context":"ProductVariantController","level":"debug","message":"Database connection released","timestamp":"2025-12-21T15:20:38.948Z"}
+{"context":"HTTP","duration":"7 ms","ip":"::1","level":"http","message":"GET /api/product-variant 200 - 7ms","method":"GET","timestamp":"2025-12-21T15:20:38.949Z","url":"/api/product-variant"}
+{"context":"ProductVariantController","level":"debug","message":"Database connection established","timestamp":"2025-12-21T15:21:00.768Z"}
+{"context":"ProductVariantModel","level":"debug","message":"Fetching product variant with ID: 1","timestamp":"2025-12-21T15:21:00.769Z"}
+{"context":"ProductVariantModel","level":"warn","message":"No product variant found with ID: 1","timestamp":"2025-12-21T15:21:00.770Z"}
+{"context":"ProductVariantController","level":"warn","message":"Product variant not found with ID: 1","timestamp":"2025-12-21T15:21:00.770Z"}
+{"context":"ProductVariantController","level":"debug","message":"Database connection released","timestamp":"2025-12-21T15:21:00.771Z"}
+{"context":"HTTP","duration":"3 ms","ip":"::1","level":"warn","message":"GET /api/product-variant/1 404 - 3ms","method":"GET","timestamp":"2025-12-21T15:21:00.771Z","url":"/api/product-variant/1"}
+{"context":"ProductVariantController","level":"debug","message":"Database connection established","timestamp":"2025-12-21T15:22:13.456Z"}
+{"context":"ProductVariantModel","level":"debug","message":"Creating new product variant with data: {\"product_id\":\"1\",\"name\":\"telur\",\"extra_price\":1000}","timestamp":"2025-12-21T15:22:13.457Z"}
+{"context":"ProductVariantController","level":"error","message":"Error creating product variant: Cannot add or update a child row: a foreign key constraint fails (`wow_db`.`product_variants`, CONSTRAINT `product_variants_ibfk_1` FOREIGN KEY (`product_id`) REFERENCES `products` (`id`) ON DELETE CASCADE)","timestamp":"2025-12-21T15:22:13.501Z"}
+{"context":"ProductVariantController","level":"debug","message":"Database connection released","timestamp":"2025-12-21T15:22:13.502Z"}
+{"context":"HTTP","duration":"47 ms","ip":"::1","level":"error","message":"POST /api/product-variant 500 - 47ms","method":"POST","timestamp":"2025-12-21T15:22:13.503Z","url":"/api/product-variant"}
+{"context":"ProductVariantController","level":"debug","message":"Database connection established","timestamp":"2025-12-21T15:22:40.216Z"}
+{"context":"ProductVariantModel","level":"debug","message":"Creating new product variant with data: {\"product_id\":\"2\",\"name\":\"telur\",\"extra_price\":1000}","timestamp":"2025-12-21T15:22:40.217Z"}
+{"context":"ProductVariantModel","level":"info","message":"Product variant created with ID: 2","timestamp":"2025-12-21T15:22:40.219Z"}
+{"context":"ProductVariantController","level":"debug","message":"Product variant created with ID: 2","timestamp":"2025-12-21T15:22:40.259Z"}
+{"context":"ProductVariantController","level":"debug","message":"Database connection released","timestamp":"2025-12-21T15:22:40.260Z"}
+{"context":"HTTP","duration":"45 ms","ip":"::1","level":"http","message":"POST /api/product-variant 201 - 45ms","method":"POST","timestamp":"2025-12-21T15:22:40.261Z","url":"/api/product-variant"}
+{"context":"ProductVariantController","level":"debug","message":"Database connection established","timestamp":"2025-12-21T15:22:55.248Z"}
+{"context":"ProductVariantModel","level":"debug","message":"Creating new product variant with data: {\"product_id\":\"2\",\"name\":\"telur\",\"extra_price\":1000}","timestamp":"2025-12-21T15:22:55.249Z"}
+{"context":"ProductVariantModel","level":"info","message":"Product variant created with ID: 3","timestamp":"2025-12-21T15:22:55.250Z"}
+{"context":"ProductVariantController","level":"debug","message":"Product variant created with ID: 3","timestamp":"2025-12-21T15:22:55.289Z"}
+{"context":"ProductVariantController","level":"debug","message":"Database connection released","timestamp":"2025-12-21T15:22:55.290Z"}
+{"context":"HTTP","duration":"42 ms","ip":"::1","level":"http","message":"POST /api/product-variant 201 - 42ms","method":"POST","timestamp":"2025-12-21T15:22:55.291Z","url":"/api/product-variant"}
+{"context":"ProductVariantController","level":"debug","message":"Database connection established","timestamp":"2025-12-21T15:24:36.324Z"}
+{"context":"ProductVariantModel","level":"debug","message":"Updating product variant with ID: 1 with data: {\"product_id\":\"2\",\"name\":\"telur rebus\",\"extra_price\":1000}","timestamp":"2025-12-21T15:24:36.325Z"}
+{"context":"ProductVariantModel","level":"warn","message":"No product variant found to update with ID: 1","timestamp":"2025-12-21T15:24:36.327Z"}
+{"context":"ProductVariantController","level":"warn","message":"Product variant not found for update with ID: 1","timestamp":"2025-12-21T15:24:36.328Z"}
+{"context":"ProductVariantController","level":"debug","message":"Database connection released","timestamp":"2025-12-21T15:24:36.329Z"}
+{"context":"HTTP","duration":"6 ms","ip":"::1","level":"warn","message":"PUT /api/product-variant/1 404 - 6ms","method":"PUT","timestamp":"2025-12-21T15:24:36.330Z","url":"/api/product-variant/1"}
+{"context":"ProductVariantController","level":"debug","message":"Database connection established","timestamp":"2025-12-21T15:24:39.082Z"}
+{"context":"ProductVariantModel","level":"debug","message":"Updating product variant with ID: 2 with data: {\"product_id\":\"2\",\"name\":\"telur rebus\",\"extra_price\":1000}","timestamp":"2025-12-21T15:24:39.083Z"}
+{"context":"ProductVariantModel","level":"info","message":"Product variant with ID: 2 updated successfully","timestamp":"2025-12-21T15:24:39.084Z"}
+{"context":"ProductVariantController","level":"debug","message":"Product variant updated with ID: 2","timestamp":"2025-12-21T15:24:39.124Z"}
+{"context":"ProductVariantController","level":"debug","message":"Database connection released","timestamp":"2025-12-21T15:24:39.125Z"}
+{"context":"HTTP","duration":"44 ms","ip":"::1","level":"http","message":"PUT /api/product-variant/2 200 - 44ms","method":"PUT","timestamp":"2025-12-21T15:24:39.126Z","url":"/api/product-variant/2"}
+{"context":"ProductVariantController","level":"debug","message":"Database connection established","timestamp":"2025-12-21T15:25:11.105Z"}
+{"context":"ProductVariantModel","level":"debug","message":"Deleting product variant with ID: 2","timestamp":"2025-12-21T15:25:11.106Z"}
+{"context":"ProductVariantModel","level":"info","message":"Product variant with ID: 2 deleted successfully","timestamp":"2025-12-21T15:25:11.107Z"}
+{"context":"ProductVariantController","level":"debug","message":"Product variant deleted with ID: 2","timestamp":"2025-12-21T15:25:11.110Z"}
+{"context":"ProductVariantController","level":"debug","message":"Database connection released","timestamp":"2025-12-21T15:25:11.111Z"}
+{"context":"HTTP","duration":"8 ms","ip":"::1","level":"http","message":"DELETE /api/product-variant/2 200 - 8ms","method":"DELETE","timestamp":"2025-12-21T15:25:11.112Z","url":"/api/product-variant/2"}
+{"context":"OrderController","level":"debug","message":"Database connection established","timestamp":"2025-12-21T15:26:24.822Z"}
+{"context":"OrderModel","level":"debug","message":"Fetching all orders from the database","timestamp":"2025-12-21T15:26:24.823Z"}
+{"context":"OrderModel","level":"info","message":"Fetched 0 orders","timestamp":"2025-12-21T15:26:24.826Z"}
+{"context":"OrderController","level":"debug","message":"Fetching all orders","timestamp":"2025-12-21T15:26:24.827Z"}
+{"context":"OrderController","level":"debug","message":"Database connection released","timestamp":"2025-12-21T15:26:24.828Z"}
+{"context":"HTTP","duration":"7 ms","ip":"::1","level":"http","message":"GET /api/order 200 - 7ms","method":"GET","timestamp":"2025-12-21T15:26:24.829Z","url":"/api/order"}
+{"context":"OrderController","level":"debug","message":"Database connection established","timestamp":"2025-12-21T15:26:52.037Z"}
+{"context":"OrderModel","level":"debug","message":"Fetching order with ID: 1","timestamp":"2025-12-21T15:26:52.038Z"}
+{"context":"OrderModel","level":"warn","message":"No order found with ID: 1","timestamp":"2025-12-21T15:26:52.039Z"}
+{"context":"OrderController","level":"warn","message":"Order not found with ID: 1","timestamp":"2025-12-21T15:26:52.040Z"}
+{"context":"OrderController","level":"debug","message":"Database connection released","timestamp":"2025-12-21T15:26:52.041Z"}
+{"context":"HTTP","duration":"5 ms","ip":"::1","level":"warn","message":"GET /api/order/1 404 - 5ms","method":"GET","timestamp":"2025-12-21T15:26:52.041Z","url":"/api/order/1"}
+{"context":"ProductController","level":"debug","message":"Database connection established","timestamp":"2025-12-21T15:36:02.329Z"}
+{"context":"ProductModel","level":"debug","message":"Fetching all products from the database","timestamp":"2025-12-21T15:36:02.330Z"}
+{"context":"ProductModel","level":"info","message":"Fetched 1 products","timestamp":"2025-12-21T15:36:02.331Z"}
+{"context":"ProductController","level":"debug","message":"Fetching all products","timestamp":"2025-12-21T15:36:02.332Z"}
+{"context":"ProductController","level":"debug","message":"Database connection released","timestamp":"2025-12-21T15:36:02.333Z"}
+{"context":"HTTP","duration":"4 ms","ip":"::1","level":"http","message":"GET /api/product 200 - 4ms","method":"GET","timestamp":"2025-12-21T15:36:02.334Z","url":"/api/product"}
+{"level":"info","message":"Server is running on http://localhost:3000","module":"Server","timestamp":"2025-12-21T15:37:25.273Z"}
+{"level":"info","message":"Server is running on http://localhost:3000","module":"Server","timestamp":"2025-12-21T15:45:57.691Z"}
+{"context":"ProductVariantController","level":"debug","message":"Database connection established","timestamp":"2025-12-21T15:46:23.335Z"}
+{"context":"ProductVariantModel","level":"debug","message":"Fetching all product variants from the database","timestamp":"2025-12-21T15:46:23.336Z"}
+{"context":"ProductVariantModel","level":"info","message":"Fetched 1 product variants","timestamp":"2025-12-21T15:46:23.343Z"}
+{"context":"ProductVariantController","level":"debug","message":"Fetching all product variants","timestamp":"2025-12-21T15:46:23.344Z"}
+{"context":"ProductVariantController","level":"debug","message":"Database connection released","timestamp":"2025-12-21T15:46:23.350Z"}
+{"context":"HTTP","duration":"73 ms","ip":"::1","level":"http","message":"GET /api/product-variant 200 - 73ms","method":"GET","timestamp":"2025-12-21T15:46:23.353Z","url":"/api/product-variant"}
+{"context":"OrderController","level":"debug","message":"Database connection established","timestamp":"2025-12-21T15:47:28.427Z"}
+{"context":"OrderModel","level":"debug","message":"Creating new order with data: {\"table_number\":\"1\",\"customer_name\":\"tes\",\"location\":\"dine-in\",\"total_amount\":20000,\"payment_method\":\"qris\",\"payment_status\":\"pending\",\"order_status\":\"pending\",\"items\":[{\"product_id\":\"2\",\"quantity\":1,\"price_at_order\":1000,\"notes\":null,\"itemVariants\":[{\"variant_name\":\"telur\",\"variant_price\":1000}]}]}","timestamp":"2025-12-21T15:47:28.430Z"}
+{"context":"OrderModel","level":"info","message":"Order created with ID: 1","timestamp":"2025-12-21T15:47:28.434Z"}
+{"context":"OrderItemModel","level":"debug","message":"Creating a new order item with data: {\"product_id\":\"2\",\"quantity\":1,\"price_at_order\":1000,\"notes\":null,\"itemVariants\":[{\"variant_name\":\"telur\",\"variant_price\":1000}],\"order_id\":1}","timestamp":"2025-12-21T15:47:28.435Z"}
+{"context":"OrderItemModel","level":"info","message":"Created new order item with ID: 1","timestamp":"2025-12-21T15:47:28.438Z"}
+{"context":"OrderController","level":"debug","message":"Order item created for order ID: 1","timestamp":"2025-12-21T15:47:28.438Z"}
+{"context":"OrderController","level":"error","message":"Error creating order: Converting circular structure to JSON\n    --> starting at object with constructor 'Object'\n    |     property 'order_item_id' -> object with constructor 'Object'\n    |     property 'itemVariants' -> object with constructor 'Array'\n    --- index 0 closes the circle","timestamp":"2025-12-21T15:47:28.480Z"}
+{"context":"OrderController","level":"debug","message":"Database connection released","timestamp":"2025-12-21T15:47:28.481Z"}
+{"context":"HTTP","duration":"56 ms","ip":"::1","level":"error","message":"POST /api/order 500 - 56ms","method":"POST","timestamp":"2025-12-21T15:47:28.482Z","url":"/api/order"}
+{"level":"info","message":"Server is running on http://localhost:3000","module":"Server","timestamp":"2025-12-21T15:51:01.544Z"}
+{"context":"OrderController","level":"debug","message":"Database connection established","timestamp":"2025-12-21T15:51:07.308Z"}
+{"context":"OrderModel","level":"debug","message":"Creating new order with data: {\"table_number\":\"1\",\"customer_name\":\"tes\",\"location\":\"dine-in\",\"total_amount\":20000,\"payment_method\":\"qris\",\"payment_status\":\"pending\",\"order_status\":\"pending\",\"items\":[{\"product_id\":\"2\",\"quantity\":1,\"price_at_order\":1000,\"notes\":null,\"itemVariants\":[{\"variant_name\":\"telur\",\"variant_price\":1000}]}]}","timestamp":"2025-12-21T15:51:07.310Z"}
+{"context":"OrderModel","level":"info","message":"Order created with ID: 2","timestamp":"2025-12-21T15:51:07.314Z"}
+{"context":"OrderItemModel","level":"debug","message":"Creating a new order item with data: {\"product_id\":\"2\",\"quantity\":1,\"price_at_order\":1000,\"notes\":null,\"itemVariants\":[{\"variant_name\":\"telur\",\"variant_price\":1000}],\"order_id\":2}","timestamp":"2025-12-21T15:51:07.315Z"}
+{"context":"OrderItemModel","level":"info","message":"Created new order item with ID: 2","timestamp":"2025-12-21T15:51:07.319Z"}
+{"context":"OrderController","level":"debug","message":"Order item created for order ID: 2","timestamp":"2025-12-21T15:51:07.320Z"}
+{"context":"OrderController","level":"error","message":"Error creating order: item is not defined","timestamp":"2025-12-21T15:51:07.354Z"}
+{"context":"OrderController","level":"debug","message":"Database connection released","timestamp":"2025-12-21T15:51:07.359Z"}
+{"context":"HTTP","duration":"88 ms","ip":"::1","level":"error","message":"POST /api/order 500 - 88ms","method":"POST","timestamp":"2025-12-21T15:51:07.364Z","url":"/api/order"}
+{"level":"info","message":"Server is running on http://localhost:3000","module":"Server","timestamp":"2025-12-21T15:51:37.062Z"}
+{"level":"info","message":"Server is running on http://localhost:3000","module":"Server","timestamp":"2025-12-21T15:59:17.116Z"}
+{"level":"info","message":"Server is running on http://localhost:3000","module":"Server","timestamp":"2025-12-21T15:59:59.550Z"}
+{"context":"OrderController","level":"debug","message":"Database connection established","timestamp":"2025-12-21T16:00:09.688Z"}
+{"context":"OrderModel","level":"debug","message":"Creating new order with data: {\"table_number\":\"1\",\"customer_name\":\"tes\",\"location\":\"dine-in\",\"total_amount\":20000,\"payment_method\":\"qris\",\"payment_status\":\"pending\",\"order_status\":\"pending\"}","timestamp":"2025-12-21T16:00:09.691Z"}
+{"context":"OrderModel","level":"info","message":"Order created with ID: 3","timestamp":"2025-12-21T16:00:09.698Z"}
+{"context":"OrderItemModel","level":"debug","message":"Creating a new order item with data: {\"order_id\":3,\"product_id\":\"2\",\"quantity\":1,\"price_at_order\":1000,\"notes\":null}","timestamp":"2025-12-21T16:00:09.699Z"}
+{"context":"OrderItemModel","level":"info","message":"Created new order item with ID: 3","timestamp":"2025-12-21T16:00:09.703Z"}
+{"context":"OrderController","level":"debug","message":"Order item created for order ID: 3","timestamp":"2025-12-21T16:00:09.703Z"}
+{"context":"OrderItemVariantModel","level":"debug","message":"Creating a new order item variant with data: {\"order_item_id\":{\"id\":3,\"order_id\":3,\"product_id\":\"2\",\"quantity\":1,\"price_at_order\":1000,\"notes\":null},\"variant_name\":\"telur\",\"variant_price\":1000}","timestamp":"2025-12-21T16:00:09.704Z"}
+{"context":"OrderController","level":"error","message":"Error creating order: Incorrect integer value: '{\"id\":3,\"order_id\":3,\"product_id\":\"2\",\"quantity\":1,\"price_at_order\":1000,\"notes\":null}' for column 'order_item_id' at row 1","timestamp":"2025-12-21T16:00:09.709Z"}
+{"context":"OrderController","level":"debug","message":"Database connection released","timestamp":"2025-12-21T16:00:09.717Z"}
+{"context":"HTTP","duration":"65 ms","ip":"::1","level":"error","message":"POST /api/order 500 - 65ms","method":"POST","timestamp":"2025-12-21T16:00:09.719Z","url":"/api/order"}
+{"level":"info","message":"Server is running on http://localhost:3000","module":"Server","timestamp":"2025-12-21T16:01:20.299Z"}
+{"context":"OrderController","level":"debug","message":"Database connection established","timestamp":"2025-12-21T16:01:22.073Z"}
+{"context":"OrderModel","level":"debug","message":"Creating new order with data: {\"table_number\":\"1\",\"customer_name\":\"tes\",\"location\":\"dine-in\",\"total_amount\":20000,\"payment_method\":\"qris\",\"payment_status\":\"pending\",\"order_status\":\"pending\"}","timestamp":"2025-12-21T16:01:22.077Z"}
+{"context":"OrderModel","level":"info","message":"Order created with ID: 4","timestamp":"2025-12-21T16:01:22.082Z"}
+{"context":"OrderItemModel","level":"debug","message":"Creating a new order item with data: {\"order_id\":4,\"product_id\":\"2\",\"quantity\":1,\"price_at_order\":1000,\"notes\":null}","timestamp":"2025-12-21T16:01:22.083Z"}
+{"context":"OrderItemModel","level":"info","message":"Created new order item with ID: 4","timestamp":"2025-12-21T16:01:22.086Z"}
+{"context":"OrderController","level":"debug","message":"Order item created for order ID: 4","timestamp":"2025-12-21T16:01:22.089Z"}
+{"context":"OrderItemVariantModel","level":"debug","message":"Creating a new order item variant with data: {\"order_item_id\":4,\"variant_name\":\"telur\",\"variant_price\":1000}","timestamp":"2025-12-21T16:01:22.090Z"}
+{"context":"OrderItemVariantModel","level":"info","message":"Created new order item variant with ID: 1","timestamp":"2025-12-21T16:01:22.094Z"}
+{"context":"OrderController","level":"debug","message":"Order item variant created for order item ID: [object Object]","timestamp":"2025-12-21T16:01:22.094Z"}
+{"context":"OrderController","level":"debug","message":"Order created with ID: 4","timestamp":"2025-12-21T16:01:22.101Z"}
+{"context":"OrderController","level":"debug","message":"Database connection released","timestamp":"2025-12-21T16:01:22.111Z"}
+{"context":"HTTP","duration":"91 ms","ip":"::1","level":"http","message":"POST /api/order 201 - 91ms","method":"POST","timestamp":"2025-12-21T16:01:22.119Z","url":"/api/order"}
+{"level":"info","message":"Server is running on http://localhost:3000","module":"Server","timestamp":"2025-12-21T16:04:30.976Z"}
+{"context":"OrderController","level":"debug","message":"Database connection established","timestamp":"2025-12-21T16:05:04.711Z"}
+{"context":"OrderModel","level":"debug","message":"Updating order with ID: 4 with data: {\"table_number\":\"1\",\"customer_name\":\"tes\",\"location\":\"dine-in\",\"total_amount\":20000,\"payment_method\":\"qris\",\"payment_status\":\"pending\",\"order_status\":\"pending\"}","timestamp":"2025-12-21T16:05:04.714Z"}
+{"context":"OrderModel","level":"info","message":"Order with ID: 4 updated successfully","timestamp":"2025-12-21T16:05:04.718Z"}
+{"context":"OrderItemModel","level":"debug","message":"Updating order item with ID: undefined with data: {\"order_id\":\"4\",\"product_id\":\"2\",\"quantity\":1,\"price_at_order\":1000,\"notes\":null}","timestamp":"2025-12-21T16:05:04.719Z"}
+{"context":"OrderController","level":"error","message":"Error updating order with ID 4: Bind parameters must not contain undefined. To pass SQL NULL specify JS null","timestamp":"2025-12-21T16:05:04.722Z"}
+{"context":"OrderController","level":"debug","message":"Database connection released","timestamp":"2025-12-21T16:05:04.727Z"}
+{"context":"HTTP","duration":"55 ms","ip":"::1","level":"error","message":"PUT /api/order/4 500 - 55ms","method":"PUT","timestamp":"2025-12-21T16:05:04.729Z","url":"/api/order/4"}
+{"level":"info","message":"Server is running on http://localhost:3000","module":"Server","timestamp":"2025-12-21T16:05:47.933Z"}
+{"context":"OrderController","level":"debug","message":"Database connection established","timestamp":"2025-12-21T16:05:50.923Z"}
+{"context":"OrderModel","level":"debug","message":"Updating order with ID: 4 with data: {\"table_number\":\"1\",\"customer_name\":\"tes\",\"location\":\"dine-in\",\"total_amount\":20000,\"payment_method\":\"qris\",\"payment_status\":\"pending\",\"order_status\":\"pending\"}","timestamp":"2025-12-21T16:05:50.926Z"}
+{"context":"OrderModel","level":"info","message":"Order with ID: 4 updated successfully","timestamp":"2025-12-21T16:05:50.929Z"}
+{"context":"OrderItemModel","level":"debug","message":"Updating order item with ID: undefined with data: {\"order_id\":\"4\",\"product_id\":\"2\",\"quantity\":1,\"price_at_order\":1000,\"notes\":null}","timestamp":"2025-12-21T16:05:50.930Z"}
+{"context":"OrderController","level":"error","message":"Error updating order with ID 4: Bind parameters must not contain undefined. To pass SQL NULL specify JS null","timestamp":"2025-12-21T16:05:50.933Z"}
+{"context":"OrderController","level":"debug","message":"Database connection released","timestamp":"2025-12-21T16:05:50.938Z"}
+{"context":"HTTP","duration":"55 ms","ip":"::1","level":"error","message":"PUT /api/order/4 500 - 55ms","method":"PUT","timestamp":"2025-12-21T16:05:50.940Z","url":"/api/order/4"}
+{"level":"info","message":"Server is running on http://localhost:3000","module":"Server","timestamp":"2025-12-21T16:08:25.581Z"}
+{"context":"OrderController","level":"debug","message":"Database connection established","timestamp":"2025-12-21T16:08:26.887Z"}
+{"context":"OrderModel","level":"debug","message":"Updating order with ID: 4 with data: {\"table_number\":\"1\",\"customer_name\":\"tes\",\"location\":\"dine-in\",\"total_amount\":20000,\"payment_method\":\"qris\",\"payment_status\":\"pending\",\"order_status\":\"pending\"}","timestamp":"2025-12-21T16:08:26.891Z"}
+{"context":"OrderModel","level":"info","message":"Order with ID: 4 updated successfully","timestamp":"2025-12-21T16:08:26.896Z"}
+{"context":"OrderItemModel","level":"debug","message":"Updating order item with ID: undefined with data: {\"order_id\":true,\"product_id\":\"2\",\"quantity\":1,\"price_at_order\":1000,\"notes\":null}","timestamp":"2025-12-21T16:08:26.897Z"}
+{"context":"OrderController","level":"error","message":"Error updating order with ID 4: Bind parameters must not contain undefined. To pass SQL NULL specify JS null","timestamp":"2025-12-21T16:08:26.898Z"}
+{"context":"OrderController","level":"debug","message":"Database connection released","timestamp":"2025-12-21T16:08:26.903Z"}
+{"context":"HTTP","duration":"57 ms","ip":"::1","level":"error","message":"PUT /api/order/4 500 - 57ms","method":"PUT","timestamp":"2025-12-21T16:08:26.907Z","url":"/api/order/4"}
+{"level":"info","message":"Server is running on http://localhost:3000","module":"Server","timestamp":"2025-12-21T16:08:54.892Z"}
+{"context":"OrderController","level":"debug","message":"Database connection established","timestamp":"2025-12-21T16:09:01.329Z"}
+{"context":"OrderModel","level":"debug","message":"Updating order with ID: 4 with data: {\"table_number\":\"1\",\"customer_name\":\"tes\",\"location\":\"dine-in\",\"total_amount\":20000,\"payment_method\":\"qris\",\"payment_status\":\"pending\",\"order_status\":\"pending\"}","timestamp":"2025-12-21T16:09:01.331Z"}
+{"context":"OrderModel","level":"info","message":"Order with ID: 4 updated successfully","timestamp":"2025-12-21T16:09:01.335Z"}
+{"context":"OrderItemModel","level":"debug","message":"Updating order item with ID: undefined with data: {\"order_id\":\"4\",\"product_id\":\"2\",\"quantity\":1,\"price_at_order\":1000,\"notes\":null}","timestamp":"2025-12-21T16:09:01.336Z"}
+{"context":"OrderController","level":"error","message":"Error updating order with ID 4: Bind parameters must not contain undefined. To pass SQL NULL specify JS null","timestamp":"2025-12-21T16:09:01.338Z"}
+{"context":"OrderController","level":"debug","message":"Database connection released","timestamp":"2025-12-21T16:09:01.345Z"}
+{"context":"HTTP","duration":"49 ms","ip":"::1","level":"error","message":"PUT /api/order/4 500 - 49ms","method":"PUT","timestamp":"2025-12-21T16:09:01.347Z","url":"/api/order/4"}
+{"level":"info","message":"Server is running on http://localhost:3000","module":"Server","timestamp":"2025-12-21T16:09:41.323Z"}
+{"context":"OrderController","level":"debug","message":"Database connection established","timestamp":"2025-12-21T16:09:42.984Z"}
+{"context":"OrderModel","level":"debug","message":"Updating order with ID: 4 with data: {\"table_number\":\"1\",\"customer_name\":\"tes\",\"location\":\"dine-in\",\"total_amount\":20000,\"payment_method\":\"qris\",\"payment_status\":\"pending\",\"order_status\":\"pending\"}","timestamp":"2025-12-21T16:09:42.986Z"}
+{"context":"OrderModel","level":"info","message":"Order with ID: 4 updated successfully","timestamp":"2025-12-21T16:09:42.990Z"}
+{"context":"OrderItemModel","level":"debug","message":"Updating order item with ID: undefined with data: {\"order_id\":\"4\",\"product_id\":\"2\",\"quantity\":1,\"price_at_order\":1000,\"notes\":null}","timestamp":"2025-12-21T16:09:42.992Z"}
+{"context":"OrderController","level":"error","message":"Error updating order with ID 4: Bind parameters must not contain undefined. To pass SQL NULL specify JS null","timestamp":"2025-12-21T16:09:42.994Z"}
+{"context":"OrderController","level":"debug","message":"Database connection released","timestamp":"2025-12-21T16:09:43.000Z"}
+{"context":"HTTP","duration":"53 ms","ip":"::1","level":"error","message":"PUT /api/order/4 500 - 53ms","method":"PUT","timestamp":"2025-12-21T16:09:43.004Z","url":"/api/order/4"}
+{"level":"info","message":"Server is running on http://localhost:3000","module":"Server","timestamp":"2025-12-21T16:10:15.502Z"}
+{"context":"OrderController","level":"debug","message":"Database connection established","timestamp":"2025-12-21T16:10:21.059Z"}
+{"context":"OrderModel","level":"debug","message":"Updating order with ID: 4 with data: {\"table_number\":\"1\",\"customer_name\":\"tes\",\"location\":\"dine-in\",\"total_amount\":20000,\"payment_method\":\"qris\",\"payment_status\":\"pending\",\"order_status\":\"pending\"}","timestamp":"2025-12-21T16:10:21.061Z"}
+{"context":"OrderModel","level":"info","message":"Order with ID: 4 updated successfully","timestamp":"2025-12-21T16:10:21.065Z"}
+{"context":"OrderItemModel","level":"debug","message":"Updating order item with ID: undefined with data: {\"order_id\":\"4\",\"product_id\":\"2\",\"quantity\":1,\"price_at_order\":1000,\"notes\":null}","timestamp":"2025-12-21T16:10:21.066Z"}
+{"context":"OrderController","level":"error","message":"Error updating order with ID 4: Bind parameters must not contain undefined. To pass SQL NULL specify JS null","timestamp":"2025-12-21T16:10:21.069Z"}
+{"context":"OrderController","level":"debug","message":"Database connection released","timestamp":"2025-12-21T16:10:21.074Z"}
+{"context":"HTTP","duration":"51 ms","ip":"::1","level":"error","message":"PUT /api/order/4 500 - 51ms","method":"PUT","timestamp":"2025-12-21T16:10:21.076Z","url":"/api/order/4"}
+{"level":"info","message":"Server is running on http://localhost:3000","module":"Server","timestamp":"2025-12-21T16:14:42.334Z"}
+{"level":"info","message":"Server is running on http://localhost:3000","module":"Server","timestamp":"2025-12-21T16:14:59.226Z"}
+{"level":"info","message":"Server is running on http://localhost:3000","module":"Server","timestamp":"2025-12-21T16:15:35.960Z"}
+{"context":"OrderController","level":"debug","message":"Database connection established","timestamp":"2025-12-21T16:15:57.690Z"}
+{"context":"OrderModel","level":"debug","message":"Updating order with ID: 4 with data: {\"table_number\":\"1\",\"customer_name\":\"tes\",\"location\":\"dine-in\",\"total_amount\":20000,\"payment_method\":\"qris\",\"payment_status\":\"pending\",\"order_status\":\"pending\"}","timestamp":"2025-12-21T16:15:57.693Z"}
+{"context":"OrderModel","level":"info","message":"Order with ID: 4 updated successfully","timestamp":"2025-12-21T16:15:57.698Z"}
+{"context":"OrderItemModel","level":"debug","message":"Deleting order item with ID: 4","timestamp":"2025-12-21T16:15:57.698Z"}
+{"context":"OrderItemModel","level":"info","message":"Deleted order item with ID: 4","timestamp":"2025-12-21T16:15:57.731Z"}
+{"context":"OrderItemModel","level":"debug","message":"Creating a new order item with data: {\"order_id\":\"4\",\"product_id\":\"2\",\"quantity\":1,\"price_at_order\":1000,\"notes\":null}","timestamp":"2025-12-21T16:15:57.733Z"}
+{"context":"OrderItemModel","level":"info","message":"Created new order item with ID: 5","timestamp":"2025-12-21T16:15:57.735Z"}
+{"context":"OrderController","level":"debug","message":"Order item updated for order ID: 4","timestamp":"2025-12-21T16:15:57.735Z"}
+{"context":"OrderItemVariantModel","level":"debug","message":"Creating a new order item variant with data: {\"order_item_id\":{\"id\":5,\"order_id\":\"4\",\"product_id\":\"2\",\"quantity\":1,\"price_at_order\":1000,\"notes\":null},\"variant_name\":\"telur\",\"variant_price\":1000}","timestamp":"2025-12-21T16:15:57.736Z"}
+{"context":"OrderController","level":"error","message":"Error updating order with ID 4: Incorrect integer value: '{\"id\":5,\"order_id\":\"4\",\"product_id\":\"2\",\"quantity\":1,\"price_at_order\":1000,\"notes\":null}' for column 'order_item_id' at row 1","timestamp":"2025-12-21T16:15:57.742Z"}
+{"context":"OrderController","level":"debug","message":"Database connection released","timestamp":"2025-12-21T16:15:57.746Z"}
+{"context":"HTTP","duration":"92 ms","ip":"::1","level":"error","message":"PUT /api/order/4 500 - 92ms","method":"PUT","timestamp":"2025-12-21T16:15:57.749Z","url":"/api/order/4"}
+{"level":"info","message":"Server is running on http://localhost:3000","module":"Server","timestamp":"2025-12-21T16:17:42.452Z"}
+{"context":"OrderController","level":"debug","message":"Database connection established","timestamp":"2025-12-21T16:17:44.493Z"}
+{"context":"OrderModel","level":"debug","message":"Updating order with ID: 4 with data: {\"table_number\":\"1\",\"customer_name\":\"tes\",\"location\":\"dine-in\",\"total_amount\":20000,\"payment_method\":\"qris\",\"payment_status\":\"pending\",\"order_status\":\"pending\"}","timestamp":"2025-12-21T16:17:44.495Z"}
+{"context":"OrderModel","level":"info","message":"Order with ID: 4 updated successfully","timestamp":"2025-12-21T16:17:44.499Z"}
+{"context":"OrderItemModel","level":"debug","message":"Deleting order item with ID: 4","timestamp":"2025-12-21T16:17:44.499Z"}
+{"context":"OrderItemModel","level":"info","message":"Deleted order item with ID: 4","timestamp":"2025-12-21T16:17:44.502Z"}
+{"context":"OrderItemModel","level":"debug","message":"Creating a new order item with data: {\"order_id\":\"4\",\"product_id\":\"2\",\"quantity\":1,\"price_at_order\":1000,\"notes\":null}","timestamp":"2025-12-21T16:17:44.503Z"}
+{"context":"OrderItemModel","level":"info","message":"Created new order item with ID: 6","timestamp":"2025-12-21T16:17:44.508Z"}
+{"context":"OrderController","level":"debug","message":"Order item updated for order ID: 4","timestamp":"2025-12-21T16:17:44.509Z"}
+{"context":"OrderItemVariantModel","level":"debug","message":"Creating a new order item variant with data: {\"order_item_id\":6,\"variant_name\":\"telur\",\"variant_price\":1000}","timestamp":"2025-12-21T16:17:44.510Z"}
+{"context":"OrderItemVariantModel","level":"info","message":"Created new order item variant with ID: 2","timestamp":"2025-12-21T16:17:44.511Z"}
+{"context":"OrderController","level":"debug","message":"Order updated with ID: 4","timestamp":"2025-12-21T16:17:44.546Z"}
+{"context":"OrderController","level":"debug","message":"Database connection released","timestamp":"2025-12-21T16:17:44.550Z"}
+{"context":"HTTP","duration":"94 ms","ip":"::1","level":"http","message":"PUT /api/order/4 200 - 94ms","method":"PUT","timestamp":"2025-12-21T16:17:44.552Z","url":"/api/order/4"}
+{"context":"OrderController","level":"debug","message":"Database connection established","timestamp":"2025-12-21T16:18:08.996Z"}
+{"context":"OrderModel","level":"debug","message":"Deleting order with ID: 4","timestamp":"2025-12-21T16:18:08.998Z"}
+{"context":"OrderModel","level":"info","message":"Order with ID: 4 deleted successfully","timestamp":"2025-12-21T16:18:09.000Z"}
+{"context":"OrderController","level":"debug","message":"Order deleted with ID: 4","timestamp":"2025-12-21T16:18:09.040Z"}
+{"context":"OrderController","level":"debug","message":"Database connection released","timestamp":"2025-12-21T16:18:09.042Z"}
+{"context":"HTTP","duration":"48 ms","ip":"::1","level":"http","message":"DELETE /api/order/4 200 - 48ms","method":"DELETE","timestamp":"2025-12-21T16:18:09.043Z","url":"/api/order/4"}
+{"level":"info","message":"Server is running on http://localhost:3000","module":"Server","timestamp":"2025-12-21T16:40:54.836Z"}
+{"level":"warn","message":"Access denied. No token provided.","module":"authMiddleware","timestamp":"2025-12-21T16:41:03.616Z"}
+{"context":"HTTP","duration":"6 ms","ip":"::1","level":"warn","message":"GET /api/user 401 - 6ms","method":"GET","timestamp":"2025-12-21T16:41:03.622Z","url":"/api/user"}
+{"level":"info","message":"Server is running on http://localhost:3000","module":"Server","timestamp":"2025-12-21T16:41:26.692Z"}
+{"level":"warn","message":"Access denied. No token provided. IP: ::1","module":"authMiddleware","timestamp":"2025-12-21T16:41:28.669Z"}
+{"context":"HTTP","duration":"6 ms","ip":"::1","level":"warn","message":"GET /api/user 401 - 6ms","method":"GET","timestamp":"2025-12-21T16:41:28.675Z","url":"/api/user"}
+{"level":"info","message":"Server is running on http://localhost:3000","module":"Server","timestamp":"2025-12-21T17:54:33.105Z"}
+{"level":"warn","message":"Invalid or expired token.","module":"authMiddleware","timestamp":"2025-12-21T17:54:39.683Z"}
+{"context":"HTTP","duration":"11 ms","ip":"::1","level":"warn","message":"POST /api/orders 403 - 11ms","method":"POST","timestamp":"2025-12-21T17:54:39.686Z","url":"/api/orders"}
+{"level":"info","message":"Server is running on http://localhost:3000","module":"Server","timestamp":"2025-12-21T17:55:11.930Z"}
+{"level":"info","message":"Server is running on http://localhost:3000","module":"Server","timestamp":"2025-12-21T17:57:29.144Z"}
+{"level":"warn","message":"Invalid or expired token. IP: ::1","module":"authMiddleware","timestamp":"2025-12-21T17:57:38.167Z"}
+{"context":"HTTP","duration":"7 ms","ip":"::1","level":"warn","message":"POST /api/orders 403 - 7ms","method":"POST","timestamp":"2025-12-21T17:57:38.170Z","url":"/api/orders"}
+{"level":"info","message":"Server is running on http://localhost:3000","module":"Server","timestamp":"2025-12-21T17:59:14.874Z"}
+{"level":"warn","message":"Invalid or expired token. IP: ::1","module":"authMiddleware","timestamp":"2025-12-21T17:59:17.188Z"}
+{"context":"HTTP","duration":"9 ms","ip":"::1","level":"warn","message":"POST /api/orders 403 - 9ms","method":"POST","timestamp":"2025-12-21T17:59:17.193Z","url":"/api/orders"}
+{"context":"OrderController","level":"debug","message":"Database connection established","timestamp":"2025-12-21T18:00:17.325Z"}
+{"context":"OrderModel","level":"debug","message":"Creating new order with data: {\"table_number\":\"1\",\"customer_name\":\"tes\",\"total_amount\":29000,\"payment_method\":\"cash\",\"payment_status\":\"pending\",\"order_status\":\"pending\"}","timestamp":"2025-12-21T18:00:17.328Z"}
+{"context":"OrderController","level":"error","message":"Error creating order: Bind parameters must not contain undefined. To pass SQL NULL specify JS null","timestamp":"2025-12-21T18:00:17.329Z"}
+{"context":"OrderController","level":"debug","message":"Database connection released","timestamp":"2025-12-21T18:00:17.330Z"}
+{"context":"HTTP","duration":"43 ms","ip":"::1","level":"error","message":"POST /api/order 500 - 43ms","method":"POST","timestamp":"2025-12-21T18:00:17.332Z","url":"/api/order"}
+{"level":"warn","message":"404 Not Found - /socket.io/?EIO=4&transport=websocket","module":"Server","timestamp":"2025-12-21T18:08:06.684Z"}
+{"context":"HTTP","duration":"3 ms","ip":"::1","level":"warn","message":"GET /socket.io/?EIO=4&transport=websocket 404 - 3ms","method":"GET","timestamp":"2025-12-21T18:08:06.687Z","url":"/socket.io/?EIO=4&transport=websocket"}
+{"level":"warn","message":"404 Not Found - /socket.io/?EIO=4&transport=websocket","module":"Server","timestamp":"2025-12-21T18:08:08.058Z"}
+{"context":"HTTP","duration":"2 ms","ip":"::1","level":"warn","message":"GET /socket.io/?EIO=4&transport=websocket 404 - 2ms","method":"GET","timestamp":"2025-12-21T18:08:08.060Z","url":"/socket.io/?EIO=4&transport=websocket"}
+{"level":"warn","message":"404 Not Found - /socket.io/?EIO=4&transport=websocket","module":"Server","timestamp":"2025-12-21T18:08:09.865Z"}
+{"context":"HTTP","duration":"1 ms","ip":"::1","level":"warn","message":"GET /socket.io/?EIO=4&transport=websocket 404 - 1ms","method":"GET","timestamp":"2025-12-21T18:08:09.866Z","url":"/socket.io/?EIO=4&transport=websocket"}
+{"level":"warn","message":"404 Not Found - /socket.io/?EIO=4&transport=websocket","module":"Server","timestamp":"2025-12-21T18:08:13.715Z"}
+{"context":"HTTP","duration":"1 ms","ip":"::1","level":"warn","message":"GET /socket.io/?EIO=4&transport=websocket 404 - 1ms","method":"GET","timestamp":"2025-12-21T18:08:13.716Z","url":"/socket.io/?EIO=4&transport=websocket"}
+{"level":"warn","message":"404 Not Found - /socket.io/?EIO=4&transport=websocket","module":"Server","timestamp":"2025-12-21T18:08:14.159Z"}
+{"context":"HTTP","duration":"2 ms","ip":"::1","level":"warn","message":"GET /socket.io/?EIO=4&transport=websocket 404 - 2ms","method":"GET","timestamp":"2025-12-21T18:08:14.162Z","url":"/socket.io/?EIO=4&transport=websocket"}
+{"level":"warn","message":"404 Not Found - /socket.io/?EIO=4&transport=websocket","module":"Server","timestamp":"2025-12-21T18:08:15.741Z"}
+{"context":"HTTP","duration":"1 ms","ip":"::1","level":"warn","message":"GET /socket.io/?EIO=4&transport=websocket 404 - 1ms","method":"GET","timestamp":"2025-12-21T18:08:15.741Z","url":"/socket.io/?EIO=4&transport=websocket"}
+{"level":"warn","message":"404 Not Found - /socket.io/?EIO=4&transport=websocket","module":"Server","timestamp":"2025-12-21T18:08:18.462Z"}
+{"context":"HTTP","duration":"2 ms","ip":"::1","level":"warn","message":"GET /socket.io/?EIO=4&transport=websocket 404 - 2ms","method":"GET","timestamp":"2025-12-21T18:08:18.463Z","url":"/socket.io/?EIO=4&transport=websocket"}
+{"level":"error","message":"Login Error: Cannot destructure property 'username' of 'req.body' as it is undefined.","module":"AuthRoute","timestamp":"2025-12-21T18:08:22.074Z"}
+{"context":"HTTP","duration":"2 ms","ip":"::1","level":"warn","message":"POST /api/auth/login 401 - 2ms","method":"POST","timestamp":"2025-12-21T18:08:22.075Z","url":"/api/auth/login"}
+{"level":"warn","message":"404 Not Found - /socket.io/?EIO=4&transport=websocket","module":"Server","timestamp":"2025-12-21T18:08:23.477Z"}
+{"context":"HTTP","duration":"1 ms","ip":"::1","level":"warn","message":"GET /socket.io/?EIO=4&transport=websocket 404 - 1ms","method":"GET","timestamp":"2025-12-21T18:08:23.478Z","url":"/socket.io/?EIO=4&transport=websocket"}
+{"level":"warn","message":"404 Not Found - /socket.io/?EIO=4&transport=websocket","module":"Server","timestamp":"2025-12-21T18:08:28.914Z"}
+{"context":"HTTP","duration":"1 ms","ip":"::1","level":"warn","message":"GET /socket.io/?EIO=4&transport=websocket 404 - 1ms","method":"GET","timestamp":"2025-12-21T18:08:28.915Z","url":"/socket.io/?EIO=4&transport=websocket"}
+{"level":"warn","message":"404 Not Found - /socket.io/?EIO=4&transport=websocket","module":"Server","timestamp":"2025-12-21T18:08:34.923Z"}
+{"context":"HTTP","duration":"1 ms","ip":"::1","level":"warn","message":"GET /socket.io/?EIO=4&transport=websocket 404 - 1ms","method":"GET","timestamp":"2025-12-21T18:08:34.924Z","url":"/socket.io/?EIO=4&transport=websocket"}
+{"level":"warn","message":"404 Not Found - /socket.io/?EIO=4&transport=websocket","module":"Server","timestamp":"2025-12-21T18:08:40.911Z"}
+{"context":"HTTP","duration":"1 ms","ip":"::1","level":"warn","message":"GET /socket.io/?EIO=4&transport=websocket 404 - 1ms","method":"GET","timestamp":"2025-12-21T18:08:40.912Z","url":"/socket.io/?EIO=4&transport=websocket"}
+{"level":"warn","message":"404 Not Found - /socket.io/?EIO=4&transport=websocket","module":"Server","timestamp":"2025-12-21T18:08:46.911Z"}
+{"context":"HTTP","duration":"1 ms","ip":"::1","level":"warn","message":"GET /socket.io/?EIO=4&transport=websocket 404 - 1ms","method":"GET","timestamp":"2025-12-21T18:08:46.912Z","url":"/socket.io/?EIO=4&transport=websocket"}
+{"level":"warn","message":"404 Not Found - /socket.io/?EIO=4&transport=websocket","module":"Server","timestamp":"2025-12-21T18:08:52.418Z"}
+{"context":"HTTP","duration":"2 ms","ip":"::1","level":"warn","message":"GET /socket.io/?EIO=4&transport=websocket 404 - 2ms","method":"GET","timestamp":"2025-12-21T18:08:52.422Z","url":"/socket.io/?EIO=4&transport=websocket"}
+{"level":"warn","message":"404 Not Found - /socket.io/?EIO=4&transport=websocket","module":"Server","timestamp":"2025-12-21T18:08:57.913Z"}
+{"context":"HTTP","duration":"2 ms","ip":"::1","level":"warn","message":"GET /socket.io/?EIO=4&transport=websocket 404 - 2ms","method":"GET","timestamp":"2025-12-21T18:08:57.914Z","url":"/socket.io/?EIO=4&transport=websocket"}
+{"level":"warn","message":"404 Not Found - /socket.io/?EIO=4&transport=websocket","module":"Server","timestamp":"2025-12-21T18:09:03.912Z"}
+{"context":"HTTP","duration":"1 ms","ip":"::1","level":"warn","message":"GET /socket.io/?EIO=4&transport=websocket 404 - 1ms","method":"GET","timestamp":"2025-12-21T18:09:03.913Z","url":"/socket.io/?EIO=4&transport=websocket"}
+{"level":"warn","message":"404 Not Found - /socket.io/?EIO=4&transport=websocket","module":"Server","timestamp":"2025-12-21T18:09:09.912Z"}
+{"context":"HTTP","duration":"1 ms","ip":"::1","level":"warn","message":"GET /socket.io/?EIO=4&transport=websocket 404 - 1ms","method":"GET","timestamp":"2025-12-21T18:09:09.913Z","url":"/socket.io/?EIO=4&transport=websocket"}
+{"level":"warn","message":"404 Not Found - /socket.io/?EIO=4&transport=websocket","module":"Server","timestamp":"2025-12-21T18:09:15.244Z"}
+{"context":"HTTP","duration":"2 ms","ip":"::1","level":"warn","message":"GET /socket.io/?EIO=4&transport=websocket 404 - 2ms","method":"GET","timestamp":"2025-12-21T18:09:15.245Z","url":"/socket.io/?EIO=4&transport=websocket"}
+{"level":"warn","message":"404 Not Found - /socket.io/?EIO=4&transport=websocket","module":"Server","timestamp":"2025-12-21T18:09:20.927Z"}
+{"context":"HTTP","duration":"1 ms","ip":"::1","level":"warn","message":"GET /socket.io/?EIO=4&transport=websocket 404 - 1ms","method":"GET","timestamp":"2025-12-21T18:09:20.928Z","url":"/socket.io/?EIO=4&transport=websocket"}
+{"level":"warn","message":"404 Not Found - /socket.io/?EIO=4&transport=websocket","module":"Server","timestamp":"2025-12-21T18:09:26.921Z"}
+{"context":"HTTP","duration":"1 ms","ip":"::1","level":"warn","message":"GET /socket.io/?EIO=4&transport=websocket 404 - 1ms","method":"GET","timestamp":"2025-12-21T18:09:26.922Z","url":"/socket.io/?EIO=4&transport=websocket"}
+{"level":"warn","message":"404 Not Found - /socket.io/?EIO=4&transport=websocket","module":"Server","timestamp":"2025-12-21T18:09:32.910Z"}
+{"context":"HTTP","duration":"1 ms","ip":"::1","level":"warn","message":"GET /socket.io/?EIO=4&transport=websocket 404 - 1ms","method":"GET","timestamp":"2025-12-21T18:09:32.911Z","url":"/socket.io/?EIO=4&transport=websocket"}
+{"level":"warn","message":"404 Not Found - /socket.io/?EIO=4&transport=websocket","module":"Server","timestamp":"2025-12-21T18:09:38.926Z"}
+{"context":"HTTP","duration":"1 ms","ip":"::1","level":"warn","message":"GET /socket.io/?EIO=4&transport=websocket 404 - 1ms","method":"GET","timestamp":"2025-12-21T18:09:38.927Z","url":"/socket.io/?EIO=4&transport=websocket"}
+{"level":"warn","message":"404 Not Found - /socket.io/?EIO=4&transport=websocket","module":"Server","timestamp":"2025-12-21T18:09:44.927Z"}
+{"context":"HTTP","duration":"1 ms","ip":"::1","level":"warn","message":"GET /socket.io/?EIO=4&transport=websocket 404 - 1ms","method":"GET","timestamp":"2025-12-21T18:09:44.927Z","url":"/socket.io/?EIO=4&transport=websocket"}
+{"level":"info","message":"Server is running on http://localhost:3000","module":"Server","timestamp":"2025-12-21T18:09:50.280Z"}
+{"level":"warn","message":"404 Not Found - /socket.io/?EIO=4&transport=websocket","module":"Server","timestamp":"2025-12-21T18:09:50.932Z"}
+{"context":"HTTP","duration":"7 ms","ip":"::1","level":"warn","message":"GET /socket.io/?EIO=4&transport=websocket 404 - 7ms","method":"GET","timestamp":"2025-12-21T18:09:50.940Z","url":"/socket.io/?EIO=4&transport=websocket"}
+{"level":"warn","message":"404 Not Found - /socket.io/?EIO=4&transport=websocket","module":"Server","timestamp":"2025-12-21T18:09:56.940Z"}
+{"context":"HTTP","duration":"2 ms","ip":"::1","level":"warn","message":"GET /socket.io/?EIO=4&transport=websocket 404 - 2ms","method":"GET","timestamp":"2025-12-21T18:09:56.942Z","url":"/socket.io/?EIO=4&transport=websocket"}
+{"level":"warn","message":"404 Not Found - /socket.io/?EIO=4&transport=websocket","module":"Server","timestamp":"2025-12-21T18:10:02.923Z"}
+{"context":"HTTP","duration":"2 ms","ip":"::1","level":"warn","message":"GET /socket.io/?EIO=4&transport=websocket 404 - 2ms","method":"GET","timestamp":"2025-12-21T18:10:02.924Z","url":"/socket.io/?EIO=4&transport=websocket"}
+{"level":"warn","message":"404 Not Found - /socket.io/?EIO=4&transport=websocket","module":"Server","timestamp":"2025-12-21T18:10:08.925Z"}
+{"context":"HTTP","duration":"2 ms","ip":"::1","level":"warn","message":"GET /socket.io/?EIO=4&transport=websocket 404 - 2ms","method":"GET","timestamp":"2025-12-21T18:10:08.926Z","url":"/socket.io/?EIO=4&transport=websocket"}
+{"level":"warn","message":"404 Not Found - /socket.io/?EIO=4&transport=websocket","module":"Server","timestamp":"2025-12-21T18:10:14.940Z"}
+{"context":"HTTP","duration":"1 ms","ip":"::1","level":"warn","message":"GET /socket.io/?EIO=4&transport=websocket 404 - 1ms","method":"GET","timestamp":"2025-12-21T18:10:14.941Z","url":"/socket.io/?EIO=4&transport=websocket"}
+{"level":"warn","message":"404 Not Found - /socket.io/?EIO=4&transport=websocket","module":"Server","timestamp":"2025-12-21T18:10:20.955Z"}
+{"context":"HTTP","duration":"1 ms","ip":"::1","level":"warn","message":"GET /socket.io/?EIO=4&transport=websocket 404 - 1ms","method":"GET","timestamp":"2025-12-21T18:10:20.956Z","url":"/socket.io/?EIO=4&transport=websocket"}
+{"level":"info","message":"Server is running on http://localhost:3000","module":"Server","timestamp":"2025-12-21T18:10:23.851Z"}
+{"level":"warn","message":"404 Not Found - /socket.io/?EIO=4&transport=websocket","module":"Server","timestamp":"2025-12-21T18:10:26.944Z"}
+{"context":"HTTP","duration":"6 ms","ip":"::1","level":"warn","message":"GET /socket.io/?EIO=4&transport=websocket 404 - 6ms","method":"GET","timestamp":"2025-12-21T18:10:26.950Z","url":"/socket.io/?EIO=4&transport=websocket"}
+{"level":"warn","message":"404 Not Found - /socket.io/?EIO=4&transport=websocket","module":"Server","timestamp":"2025-12-21T18:10:32.942Z"}
+{"context":"HTTP","duration":"2 ms","ip":"::1","level":"warn","message":"GET /socket.io/?EIO=4&transport=websocket 404 - 2ms","method":"GET","timestamp":"2025-12-21T18:10:32.943Z","url":"/socket.io/?EIO=4&transport=websocket"}
+{"level":"warn","message":"404 Not Found - /socket.io/?EIO=4&transport=websocket","module":"Server","timestamp":"2025-12-21T18:10:38.942Z"}
+{"context":"HTTP","duration":"2 ms","ip":"::1","level":"warn","message":"GET /socket.io/?EIO=4&transport=websocket 404 - 2ms","method":"GET","timestamp":"2025-12-21T18:10:38.943Z","url":"/socket.io/?EIO=4&transport=websocket"}
+{"level":"warn","message":"404 Not Found - /socket.io/?EIO=4&transport=websocket","module":"Server","timestamp":"2025-12-21T18:10:44.940Z"}
+{"context":"HTTP","duration":"1 ms","ip":"::1","level":"warn","message":"GET /socket.io/?EIO=4&transport=websocket 404 - 1ms","method":"GET","timestamp":"2025-12-21T18:10:44.941Z","url":"/socket.io/?EIO=4&transport=websocket"}
+{"level":"warn","message":"404 Not Found - /socket.io/?EIO=4&transport=websocket","module":"Server","timestamp":"2025-12-21T18:10:50.940Z"}
+{"context":"HTTP","duration":"2 ms","ip":"::1","level":"warn","message":"GET /socket.io/?EIO=4&transport=websocket 404 - 2ms","method":"GET","timestamp":"2025-12-21T18:10:50.942Z","url":"/socket.io/?EIO=4&transport=websocket"}
+{"level":"warn","message":"404 Not Found - /socket.io/?EIO=4&transport=websocket","module":"Server","timestamp":"2025-12-21T18:10:56.936Z"}
+{"context":"HTTP","duration":"1 ms","ip":"::1","level":"warn","message":"GET /socket.io/?EIO=4&transport=websocket 404 - 1ms","method":"GET","timestamp":"2025-12-21T18:10:56.937Z","url":"/socket.io/?EIO=4&transport=websocket"}
+{"level":"warn","message":"404 Not Found - /socket.io/?EIO=4&transport=websocket","module":"Server","timestamp":"2025-12-21T18:11:02.940Z"}
+{"context":"HTTP","duration":"2 ms","ip":"::1","level":"warn","message":"GET /socket.io/?EIO=4&transport=websocket 404 - 2ms","method":"GET","timestamp":"2025-12-21T18:11:02.941Z","url":"/socket.io/?EIO=4&transport=websocket"}
+{"level":"warn","message":"404 Not Found - /socket.io/?EIO=4&transport=websocket","module":"Server","timestamp":"2025-12-21T18:11:08.939Z"}
+{"context":"HTTP","duration":"1 ms","ip":"::1","level":"warn","message":"GET /socket.io/?EIO=4&transport=websocket 404 - 1ms","method":"GET","timestamp":"2025-12-21T18:11:08.940Z","url":"/socket.io/?EIO=4&transport=websocket"}
+{"level":"warn","message":"404 Not Found - /socket.io/?EIO=4&transport=websocket","module":"Server","timestamp":"2025-12-21T18:11:14.956Z"}
+{"context":"HTTP","duration":"2 ms","ip":"::1","level":"warn","message":"GET /socket.io/?EIO=4&transport=websocket 404 - 2ms","method":"GET","timestamp":"2025-12-21T18:11:14.958Z","url":"/socket.io/?EIO=4&transport=websocket"}
+{"level":"warn","message":"404 Not Found - /socket.io/?EIO=4&transport=websocket","module":"Server","timestamp":"2025-12-21T18:11:20.938Z"}
+{"context":"HTTP","duration":"2 ms","ip":"::1","level":"warn","message":"GET /socket.io/?EIO=4&transport=websocket 404 - 2ms","method":"GET","timestamp":"2025-12-21T18:11:20.940Z","url":"/socket.io/?EIO=4&transport=websocket"}
+{"level":"warn","message":"404 Not Found - /socket.io/?EIO=4&transport=websocket","module":"Server","timestamp":"2025-12-21T18:11:26.936Z"}
+{"context":"HTTP","duration":"2 ms","ip":"::1","level":"warn","message":"GET /socket.io/?EIO=4&transport=websocket 404 - 2ms","method":"GET","timestamp":"2025-12-21T18:11:26.937Z","url":"/socket.io/?EIO=4&transport=websocket"}
+{"level":"warn","message":"404 Not Found - /socket.io/?EIO=4&transport=websocket","module":"Server","timestamp":"2025-12-21T18:11:32.937Z"}
+{"context":"HTTP","duration":"1 ms","ip":"::1","level":"warn","message":"GET /socket.io/?EIO=4&transport=websocket 404 - 1ms","method":"GET","timestamp":"2025-12-21T18:11:32.938Z","url":"/socket.io/?EIO=4&transport=websocket"}
+{"level":"warn","message":"404 Not Found - /socket.io/?EIO=4&transport=websocket","module":"Server","timestamp":"2025-12-21T18:11:38.971Z"}
+{"context":"HTTP","duration":"1 ms","ip":"::1","level":"warn","message":"GET /socket.io/?EIO=4&transport=websocket 404 - 1ms","method":"GET","timestamp":"2025-12-21T18:11:38.972Z","url":"/socket.io/?EIO=4&transport=websocket"}
+{"level":"warn","message":"404 Not Found - /socket.io/?EIO=4&transport=websocket","module":"Server","timestamp":"2025-12-21T18:11:44.996Z"}
+{"context":"HTTP","duration":"1 ms","ip":"::1","level":"warn","message":"GET /socket.io/?EIO=4&transport=websocket 404 - 1ms","method":"GET","timestamp":"2025-12-21T18:11:44.997Z","url":"/socket.io/?EIO=4&transport=websocket"}
+{"level":"info","message":"Server is running on http://localhost:3000","module":"Server","timestamp":"2025-12-21T18:12:09.973Z"}
+{"level":"error","message":"Login Error: Cannot destructure property 'username' of 'req.body' as it is undefined.","module":"AuthRoute","timestamp":"2025-12-21T18:12:27.608Z"}
+{"context":"HTTP","duration":"4 ms","ip":"::1","level":"warn","message":"POST /api/auth/login 401 - 4ms","method":"POST","timestamp":"2025-12-21T18:12:27.611Z","url":"/api/auth/login"}
+{"level":"error","message":"Login Error: Cannot destructure property 'username' of 'req.body' as it is undefined.","module":"AuthRoute","timestamp":"2025-12-21T18:12:32.434Z"}
+{"context":"HTTP","duration":"2 ms","ip":"::1","level":"warn","message":"POST /api/auth/login 401 - 2ms","method":"POST","timestamp":"2025-12-21T18:12:32.435Z","url":"/api/auth/login"}
+{"level":"info","message":"Server is running on http://localhost:3000","module":"Server","timestamp":"2025-12-21T18:14:42.148Z"}
+{"level":"error","message":"Login Error: Cannot destructure property 'username' of 'req.body' as it is undefined.","module":"AuthRoute","timestamp":"2025-12-21T18:14:44.635Z"}
+{"context":"HTTP","duration":"5 ms","ip":"::1","level":"warn","message":"POST /api/auth/login 401 - 5ms","method":"POST","timestamp":"2025-12-21T18:14:44.639Z","url":"/api/auth/login"}
+{"level":"info","message":"Server is running on http://localhost:3000","module":"Server","timestamp":"2025-12-21T18:16:14.209Z"}
+{"level":"error","message":"Login Error: Cannot destructure property 'username' of 'req.body' as it is undefined.","module":"AuthRoute","timestamp":"2025-12-21T18:16:16.261Z"}
+{"context":"HTTP","duration":"4 ms","ip":"::1","level":"warn","message":"POST /api/auth/login 401 - 4ms","method":"POST","timestamp":"2025-12-21T18:16:16.264Z","url":"/api/auth/login"}
+{"level":"info","message":"Server is running on http://localhost:3000","module":"Server","timestamp":"2025-12-21T18:16:22.688Z"}
+{"level":"info","message":"Server is running on http://localhost:3000","module":"Server","timestamp":"2025-12-21T18:17:44.723Z"}
+{"level":"error","message":"Login Error: Cannot destructure property 'username' of 'req.body' as it is undefined.","module":"AuthRoute","timestamp":"2025-12-21T18:17:49.312Z"}
+{"context":"HTTP","duration":"5 ms","ip":"::1","level":"warn","message":"POST /api/auth/login 401 - 5ms","method":"POST","timestamp":"2025-12-21T18:17:49.315Z","url":"/api/auth/login"}
+{"level":"info","message":"Server is running on http://localhost:3000","module":"Server","timestamp":"2025-12-21T18:18:29.352Z"}
+{"level":"error","message":"Login Error: Cannot destructure property 'username' of 'req.body' as it is undefined.","module":"AuthRoute","timestamp":"2025-12-21T18:18:32.475Z"}
+{"context":"HTTP","duration":"5 ms","ip":"::1","level":"warn","message":"POST /api/auth/login 401 - 5ms","method":"POST","timestamp":"2025-12-21T18:18:32.479Z","url":"/api/auth/login"}
+{"level":"info","message":"Server is running on http://localhost:3000","module":"Server","timestamp":"2025-12-21T18:19:49.163Z"}
+{"level":"error","message":"Login Error: Cannot destructure property 'username' of 'req.body' as it is undefined.","module":"AuthRoute","timestamp":"2025-12-21T18:19:53.724Z"}
+{"context":"HTTP","duration":"5 ms","ip":"::1","level":"warn","message":"POST /api/auth/login 401 - 5ms","method":"POST","timestamp":"2025-12-21T18:19:53.727Z","url":"/api/auth/login"}
+{"level":"error","message":"Login Error: Cannot destructure property 'username' of 'req.body' as it is undefined.","module":"AuthRoute","timestamp":"2025-12-21T18:19:54.181Z"}
+{"context":"HTTP","duration":"2 ms","ip":"::1","level":"warn","message":"POST /api/auth/login 401 - 2ms","method":"POST","timestamp":"2025-12-21T18:19:54.182Z","url":"/api/auth/login"}
+{"level":"info","message":"Server is running on http://localhost:3000","module":"Server","timestamp":"2025-12-21T18:20:03.847Z"}
+{"level":"info","message":"Server is running on http://localhost:3000","module":"Server","timestamp":"2025-12-21T18:20:57.502Z"}
+{"level":"error","message":"Login Error: Cannot destructure property 'username' of 'req.body' as it is undefined.","module":"AuthRoute","timestamp":"2025-12-21T18:20:59.903Z"}
+{"context":"HTTP","duration":"4 ms","ip":"::1","level":"warn","message":"POST /api/auth/login 401 - 4ms","method":"POST","timestamp":"2025-12-21T18:20:59.907Z","url":"/api/auth/login"}
+{"level":"info","message":"Server is running on http://localhost:3000","module":"Server","timestamp":"2025-12-21T18:21:07.248Z"}
+{"level":"info","message":"Server is running on http://localhost:3000","module":"Server","timestamp":"2025-12-21T18:21:50.160Z"}
+{"level":"error","message":"Login Error: Cannot destructure property 'username' of 'req.body' as it is undefined.","module":"AuthRoute","timestamp":"2025-12-21T18:21:52.498Z"}
+{"context":"HTTP","duration":"4 ms","ip":"::1","level":"warn","message":"POST /api/auth/login 401 - 4ms","method":"POST","timestamp":"2025-12-21T18:21:52.501Z","url":"/api/auth/login"}
+{"level":"info","message":"Server is running on http://localhost:3000","module":"Server","timestamp":"2025-12-21T18:22:44.045Z"}
+{"level":"error","message":"Login Error: Cannot destructure property 'username' of 'req.body' as it is undefined.","module":"AuthRoute","timestamp":"2025-12-21T18:22:48.379Z"}
+{"context":"HTTP","duration":"4 ms","ip":"::1","level":"warn","message":"POST /api/auth/login 401 - 4ms","method":"POST","timestamp":"2025-12-21T18:22:48.383Z","url":"/api/auth/login"}
+{"level":"info","message":"Server is running on http://localhost:3000","module":"Server","timestamp":"2025-12-21T18:24:39.344Z"}
+{"level":"info","message":"User logged in: Super Admin","module":"AuthRoute","timestamp":"2025-12-21T18:25:06.474Z"}
+{"context":"HTTP","duration":"3 ms","ip":"::1","level":"http","message":"POST /api/auth/login 200 - 3ms","method":"POST","timestamp":"2025-12-21T18:25:06.476Z","url":"/api/auth/login"}
+{"level":"warn","message":"Invalid or expired token. IP: ::1","module":"authMiddleware","timestamp":"2025-12-21T18:25:06.518Z"}
+{"context":"HTTP","duration":"6 ms","ip":"::1","level":"warn","message":"GET /api/orders 403 - 6ms","method":"GET","timestamp":"2025-12-21T18:25:06.521Z","url":"/api/orders"}
+{"level":"warn","message":"Invalid or expired token. IP: ::1","module":"authMiddleware","timestamp":"2025-12-21T18:25:06.523Z"}
+{"context":"HTTP","duration":"2 ms","ip":"::1","level":"warn","message":"GET /api/orders 403 - 2ms","method":"GET","timestamp":"2025-12-21T18:25:06.526Z","url":"/api/orders"}
+{"level":"warn","message":"Invalid or expired token. IP: ::1","module":"authMiddleware","timestamp":"2025-12-21T18:25:32.835Z"}
+{"context":"HTTP","duration":"2 ms","ip":"::1","level":"warn","message":"GET /api/orders 403 - 2ms","method":"GET","timestamp":"2025-12-21T18:25:32.837Z","url":"/api/orders"}
+{"level":"warn","message":"Invalid or expired token. IP: ::1","module":"authMiddleware","timestamp":"2025-12-21T18:25:32.840Z"}
+{"context":"HTTP","duration":"2 ms","ip":"::1","level":"warn","message":"GET /api/orders 403 - 2ms","method":"GET","timestamp":"2025-12-21T18:25:32.842Z","url":"/api/orders"}
+{"level":"info","message":"Server is running on http://localhost:3000","module":"Server","timestamp":"2025-12-21T18:26:29.816Z"}
+{"level":"info","message":"Server is running on http://localhost:3000","module":"Server","timestamp":"2025-12-21T18:26:37.093Z"}
+{"level":"info","message":"User logged in: Super Admin","module":"AuthRoute","timestamp":"2025-12-21T18:26:58.347Z"}
+{"context":"HTTP","duration":"2 ms","ip":"::1","level":"http","message":"POST /api/auth/login 200 - 2ms","method":"POST","timestamp":"2025-12-21T18:26:58.349Z","url":"/api/auth/login"}
+{"level":"warn","message":"Invalid or expired token. IP: ::1","module":"authMiddleware","timestamp":"2025-12-21T18:26:58.391Z"}
+{"context":"HTTP","duration":"6 ms","ip":"::1","level":"warn","message":"GET /api/orders 403 - 6ms","method":"GET","timestamp":"2025-12-21T18:26:58.396Z","url":"/api/orders"}
+{"level":"warn","message":"Invalid or expired token. IP: ::1","module":"authMiddleware","timestamp":"2025-12-21T18:26:58.398Z"}
+{"context":"HTTP","duration":"2 ms","ip":"::1","level":"warn","message":"GET /api/orders 403 - 2ms","method":"GET","timestamp":"2025-12-21T18:26:58.399Z","url":"/api/orders"}
+{"level":"info","message":"Server is running on http://localhost:3000","module":"Server","timestamp":"2025-12-21T18:28:28.338Z"}
+{"level":"info","message":"Attempting login for user: Super Admin with ip: ::1","module":"authController","timestamp":"2025-12-21T18:28:34.126Z"}
+{"level":"info","message":"Login successful for user: Super Admin","module":"authController","timestamp":"2025-12-21T18:28:34.220Z"}
+{"level":"info","message":"JWT token generated for user: Super Admin","module":"authController","timestamp":"2025-12-21T18:28:34.224Z"}
+{"level":"info","message":"Connection released for user: Super Admin","module":"authController","timestamp":"2025-12-21T18:28:34.227Z"}
+{"level":"info","message":"User logged in: Super Admin","module":"AuthRoute","timestamp":"2025-12-21T18:28:34.227Z"}
+{"context":"HTTP","duration":"136 ms","ip":"::1","level":"http","message":"POST /api/auth/login 200 - 136ms","method":"POST","timestamp":"2025-12-21T18:28:34.229Z","url":"/api/auth/login"}
+{"level":"info","message":"Token verified for user ID: 1","module":"authMiddleware","timestamp":"2025-12-21T18:28:34.274Z"}
+{"level":"info","message":"Token verified for user ID: 1","module":"authMiddleware","timestamp":"2025-12-21T18:28:34.277Z"}
+{"level":"info","message":"Token verified for user ID: 1","module":"authMiddleware","timestamp":"2025-12-21T18:28:34.280Z"}
+{"level":"info","message":"Token verified for user ID: 1","module":"authMiddleware","timestamp":"2025-12-21T18:28:34.282Z"}
+{"level":"warn","message":"404 Not Found - /api/orders","module":"Server","timestamp":"2025-12-21T18:28:34.282Z"}
+{"context":"HTTP","duration":"16 ms","ip":"::1","level":"warn","message":"GET /api/orders 404 - 16ms","method":"GET","timestamp":"2025-12-21T18:28:34.283Z","url":"/api/orders"}
+{"level":"info","message":"Token verified for user ID: 1","module":"authMiddleware","timestamp":"2025-12-21T18:28:34.287Z"}
+{"level":"info","message":"Token verified for user ID: 1","module":"authMiddleware","timestamp":"2025-12-21T18:28:34.289Z"}
+{"level":"info","message":"Token verified for user ID: 1","module":"authMiddleware","timestamp":"2025-12-21T18:28:34.291Z"}
+{"level":"info","message":"Token verified for user ID: 1","module":"authMiddleware","timestamp":"2025-12-21T18:28:34.292Z"}
+{"level":"warn","message":"404 Not Found - /api/orders","module":"Server","timestamp":"2025-12-21T18:28:34.292Z"}
+{"context":"HTTP","duration":"8 ms","ip":"::1","level":"warn","message":"GET /api/orders 404 - 8ms","method":"GET","timestamp":"2025-12-21T18:28:34.293Z","url":"/api/orders"}
+{"context":"OrderController","level":"debug","message":"Database connection established","timestamp":"2025-12-21T18:29:13.928Z"}
+{"context":"OrderModel","level":"debug","message":"Fetching all orders from the database","timestamp":"2025-12-21T18:29:13.929Z"}
+{"context":"OrderModel","level":"info","message":"Fetched 0 orders","timestamp":"2025-12-21T18:29:13.932Z"}
+{"context":"OrderController","level":"debug","message":"Fetching all orders","timestamp":"2025-12-21T18:29:13.933Z"}
+{"context":"OrderController","level":"debug","message":"Database connection released","timestamp":"2025-12-21T18:29:13.934Z"}
+{"context":"HTTP","duration":"7 ms","ip":"::1","level":"http","message":"GET /api/order 200 - 7ms","method":"GET","timestamp":"2025-12-21T18:29:13.935Z","url":"/api/order"}
+{"context":"OrderController","level":"debug","message":"Database connection established","timestamp":"2025-12-21T18:29:17.774Z"}
+{"context":"OrderModel","level":"debug","message":"Fetching all orders from the database","timestamp":"2025-12-21T18:29:17.774Z"}
+{"context":"OrderModel","level":"info","message":"Fetched 0 orders","timestamp":"2025-12-21T18:29:17.776Z"}
+{"context":"OrderController","level":"debug","message":"Fetching all orders","timestamp":"2025-12-21T18:29:17.776Z"}
+{"context":"OrderController","level":"debug","message":"Database connection released","timestamp":"2025-12-21T18:29:17.777Z"}
+{"context":"HTTP","duration":"5 ms","ip":"::1","level":"http","message":"GET /api/order 304 - 5ms","method":"GET","timestamp":"2025-12-21T18:29:17.778Z","url":"/api/order"}
+{"context":"OrderController","level":"debug","message":"Database connection established","timestamp":"2025-12-21T18:29:17.780Z"}
+{"context":"OrderModel","level":"debug","message":"Fetching all orders from the database","timestamp":"2025-12-21T18:29:17.780Z"}
+{"context":"OrderModel","level":"info","message":"Fetched 0 orders","timestamp":"2025-12-21T18:29:17.782Z"}
+{"context":"OrderController","level":"debug","message":"Fetching all orders","timestamp":"2025-12-21T18:29:17.782Z"}
+{"context":"OrderController","level":"debug","message":"Database connection released","timestamp":"2025-12-21T18:29:17.783Z"}
+{"context":"HTTP","duration":"5 ms","ip":"::1","level":"http","message":"GET /api/order 304 - 5ms","method":"GET","timestamp":"2025-12-21T18:29:17.784Z","url":"/api/order"}
+{"context":"OrderController","level":"debug","message":"Database connection established","timestamp":"2025-12-21T18:29:18.355Z"}
+{"context":"OrderModel","level":"debug","message":"Fetching all orders from the database","timestamp":"2025-12-21T18:29:18.356Z"}
+{"context":"OrderModel","level":"info","message":"Fetched 0 orders","timestamp":"2025-12-21T18:29:18.357Z"}
+{"context":"OrderController","level":"debug","message":"Fetching all orders","timestamp":"2025-12-21T18:29:18.357Z"}
+{"context":"OrderController","level":"debug","message":"Database connection released","timestamp":"2025-12-21T18:29:18.358Z"}
+{"context":"HTTP","duration":"4 ms","ip":"::1","level":"http","message":"GET /api/order 304 - 4ms","method":"GET","timestamp":"2025-12-21T18:29:18.359Z","url":"/api/order"}
+{"context":"OrderController","level":"debug","message":"Database connection established","timestamp":"2025-12-21T18:29:18.360Z"}
+{"context":"OrderModel","level":"debug","message":"Fetching all orders from the database","timestamp":"2025-12-21T18:29:18.361Z"}
+{"context":"OrderModel","level":"info","message":"Fetched 0 orders","timestamp":"2025-12-21T18:29:18.362Z"}
+{"context":"OrderController","level":"debug","message":"Fetching all orders","timestamp":"2025-12-21T18:29:18.363Z"}
+{"context":"OrderController","level":"debug","message":"Database connection released","timestamp":"2025-12-21T18:29:18.364Z"}
+{"context":"HTTP","duration":"4 ms","ip":"::1","level":"http","message":"GET /api/order 304 - 4ms","method":"GET","timestamp":"2025-12-21T18:29:18.364Z","url":"/api/order"}
+{"context":"OrderController","level":"debug","message":"Database connection established","timestamp":"2025-12-21T18:29:18.889Z"}
+{"context":"OrderModel","level":"debug","message":"Fetching all orders from the database","timestamp":"2025-12-21T18:29:18.890Z"}
+{"context":"OrderModel","level":"info","message":"Fetched 0 orders","timestamp":"2025-12-21T18:29:18.891Z"}
+{"context":"OrderController","level":"debug","message":"Fetching all orders","timestamp":"2025-12-21T18:29:18.892Z"}
+{"context":"OrderController","level":"debug","message":"Database connection released","timestamp":"2025-12-21T18:29:18.893Z"}
+{"context":"HTTP","duration":"5 ms","ip":"::1","level":"http","message":"GET /api/order 304 - 5ms","method":"GET","timestamp":"2025-12-21T18:29:18.894Z","url":"/api/order"}
+{"context":"OrderController","level":"debug","message":"Database connection established","timestamp":"2025-12-21T18:29:18.896Z"}
+{"context":"OrderModel","level":"debug","message":"Fetching all orders from the database","timestamp":"2025-12-21T18:29:18.897Z"}
+{"context":"OrderModel","level":"info","message":"Fetched 0 orders","timestamp":"2025-12-21T18:29:18.898Z"}
+{"context":"OrderController","level":"debug","message":"Fetching all orders","timestamp":"2025-12-21T18:29:18.899Z"}
+{"context":"OrderController","level":"debug","message":"Database connection released","timestamp":"2025-12-21T18:29:18.900Z"}
+{"context":"HTTP","duration":"6 ms","ip":"::1","level":"http","message":"GET /api/order 304 - 6ms","method":"GET","timestamp":"2025-12-21T18:29:18.902Z","url":"/api/order"}
+{"level":"info","message":"Server is running on http://localhost:3000","module":"Server","timestamp":"2025-12-21T18:30:20.626Z"}

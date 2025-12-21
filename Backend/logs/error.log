@@ -1,0 +1,56 @@
+{"context":"UserController","level":"error","message":"Error updating user with ID 1: Cannot read properties of undefined (reading 'password')","timestamp":"2025-12-21T14:48:34.616Z"}
+{"context":"HTTP","duration":"3 ms","ip":"::1","level":"error","message":"PUT /api/user/1 500 - 3ms","method":"PUT","timestamp":"2025-12-21T14:48:34.617Z","url":"/api/user/1"}
+{"context":"UserController","level":"error","message":"Error updating user with ID 1: Cannot read properties of undefined (reading 'password')","timestamp":"2025-12-21T14:50:40.518Z"}
+{"context":"HTTP","duration":"60 ms","ip":"::1","level":"error","message":"PUT /api/user/1 500 - 60ms","method":"PUT","timestamp":"2025-12-21T14:50:40.524Z","url":"/api/user/1"}
+{"context":"UserController","level":"error","message":"Error updating user with ID 1: Cannot read properties of undefined (reading 'password')","timestamp":"2025-12-21T14:51:02.721Z"}
+{"context":"HTTP","duration":"223 ms","ip":"::1","level":"error","message":"PUT /api/user/1 500 - 223ms","method":"PUT","timestamp":"2025-12-21T14:51:02.762Z","url":"/api/user/1"}
+{"context":"UserController","level":"error","message":"Error updating user with ID 1: Bind parameters must not contain undefined. To pass SQL NULL specify JS null","timestamp":"2025-12-21T14:53:07.111Z"}
+{"context":"HTTP","duration":"163 ms","ip":"::1","level":"error","message":"PUT /api/user/1 500 - 163ms","method":"PUT","timestamp":"2025-12-21T14:53:07.117Z","url":"/api/user/1"}
+{"context":"ProductController","level":"error","message":"Error creating product: Bind parameters must not contain undefined. To pass SQL NULL specify JS null","timestamp":"2025-12-21T15:07:41.480Z"}
+{"context":"HTTP","duration":"5 ms","ip":"::1","level":"error","message":"POST /api/product 500 - 5ms","method":"POST","timestamp":"2025-12-21T15:07:41.482Z","url":"/api/product"}
+{"context":"ProductController","level":"error","message":"Error creating product: Bind parameters must not contain undefined. To pass SQL NULL specify JS null","timestamp":"2025-12-21T15:09:11.506Z"}
+{"context":"HTTP","duration":"4 ms","ip":"::1","level":"error","message":"POST /api/product 500 - 4ms","method":"POST","timestamp":"2025-12-21T15:09:11.507Z","url":"/api/product"}
+{"context":"ProductController","level":"error","message":"Error creating product: Bind parameters must not contain undefined. To pass SQL NULL specify JS null","timestamp":"2025-12-21T15:09:19.820Z"}
+{"context":"HTTP","duration":"3 ms","ip":"::1","level":"error","message":"POST /api/product 500 - 3ms","method":"POST","timestamp":"2025-12-21T15:09:19.821Z","url":"/api/product"}
+{"context":"ProductController","level":"error","message":"Error creating product: Bind parameters must not contain undefined. To pass SQL NULL specify JS null","timestamp":"2025-12-21T15:10:52.492Z"}
+{"context":"HTTP","duration":"4 ms","ip":"::1","level":"error","message":"POST /api/product 500 - 4ms","method":"POST","timestamp":"2025-12-21T15:10:52.495Z","url":"/api/product"}
+{"context":"ProductController","level":"error","message":"Error creating product: Bind parameters must not contain undefined. To pass SQL NULL specify JS null","timestamp":"2025-12-21T15:11:37.654Z"}
+{"context":"HTTP","duration":"146 ms","ip":"::1","level":"error","message":"POST /api/product 500 - 146ms","method":"POST","timestamp":"2025-12-21T15:11:37.661Z","url":"/api/product"}
+{"context":"ProductController","level":"error","message":"Error updating product with ID 1: Bind parameters must not contain undefined. To pass SQL NULL specify JS null","timestamp":"2025-12-21T15:18:12.033Z"}
+{"context":"HTTP","duration":"7 ms","ip":"::1","level":"error","message":"PUT /api/product/1 500 - 7ms","method":"PUT","timestamp":"2025-12-21T15:18:12.036Z","url":"/api/product/1"}
+{"context":"ProductVariantController","level":"error","message":"Error creating product variant: Cannot add or update a child row: a foreign key constraint fails (`wow_db`.`product_variants`, CONSTRAINT `product_variants_ibfk_1` FOREIGN KEY (`product_id`) REFERENCES `products` (`id`) ON DELETE CASCADE)","timestamp":"2025-12-21T15:22:13.501Z"}
+{"context":"HTTP","duration":"47 ms","ip":"::1","level":"error","message":"POST /api/product-variant 500 - 47ms","method":"POST","timestamp":"2025-12-21T15:22:13.503Z","url":"/api/product-variant"}
+{"context":"OrderController","level":"error","message":"Error creating order: Converting circular structure to JSON\n    --> starting at object with constructor 'Object'\n    |     property 'order_item_id' -> object with constructor 'Object'\n    |     property 'itemVariants' -> object with constructor 'Array'\n    --- index 0 closes the circle","timestamp":"2025-12-21T15:47:28.480Z"}
+{"context":"HTTP","duration":"56 ms","ip":"::1","level":"error","message":"POST /api/order 500 - 56ms","method":"POST","timestamp":"2025-12-21T15:47:28.482Z","url":"/api/order"}
+{"context":"OrderController","level":"error","message":"Error creating order: item is not defined","timestamp":"2025-12-21T15:51:07.353Z"}
+{"context":"HTTP","duration":"88 ms","ip":"::1","level":"error","message":"POST /api/order 500 - 88ms","method":"POST","timestamp":"2025-12-21T15:51:07.364Z","url":"/api/order"}
+{"context":"OrderController","level":"error","message":"Error creating order: Incorrect integer value: '{\"id\":3,\"order_id\":3,\"product_id\":\"2\",\"quantity\":1,\"price_at_order\":1000,\"notes\":null}' for column 'order_item_id' at row 1","timestamp":"2025-12-21T16:00:09.709Z"}
+{"context":"HTTP","duration":"65 ms","ip":"::1","level":"error","message":"POST /api/order 500 - 65ms","method":"POST","timestamp":"2025-12-21T16:00:09.719Z","url":"/api/order"}
+{"context":"OrderController","level":"error","message":"Error updating order with ID 4: Bind parameters must not contain undefined. To pass SQL NULL specify JS null","timestamp":"2025-12-21T16:05:04.722Z"}
+{"context":"HTTP","duration":"55 ms","ip":"::1","level":"error","message":"PUT /api/order/4 500 - 55ms","method":"PUT","timestamp":"2025-12-21T16:05:04.729Z","url":"/api/order/4"}
+{"context":"OrderController","level":"error","message":"Error updating order with ID 4: Bind parameters must not contain undefined. To pass SQL NULL specify JS null","timestamp":"2025-12-21T16:05:50.932Z"}
+{"context":"HTTP","duration":"55 ms","ip":"::1","level":"error","message":"PUT /api/order/4 500 - 55ms","method":"PUT","timestamp":"2025-12-21T16:05:50.940Z","url":"/api/order/4"}
+{"context":"OrderController","level":"error","message":"Error updating order with ID 4: Bind parameters must not contain undefined. To pass SQL NULL specify JS null","timestamp":"2025-12-21T16:08:26.898Z"}
+{"context":"HTTP","duration":"57 ms","ip":"::1","level":"error","message":"PUT /api/order/4 500 - 57ms","method":"PUT","timestamp":"2025-12-21T16:08:26.905Z","url":"/api/order/4"}
+{"context":"OrderController","level":"error","message":"Error updating order with ID 4: Bind parameters must not contain undefined. To pass SQL NULL specify JS null","timestamp":"2025-12-21T16:09:01.338Z"}
+{"context":"HTTP","duration":"49 ms","ip":"::1","level":"error","message":"PUT /api/order/4 500 - 49ms","method":"PUT","timestamp":"2025-12-21T16:09:01.346Z","url":"/api/order/4"}
+{"context":"OrderController","level":"error","message":"Error updating order with ID 4: Bind parameters must not contain undefined. To pass SQL NULL specify JS null","timestamp":"2025-12-21T16:09:42.994Z"}
+{"context":"HTTP","duration":"53 ms","ip":"::1","level":"error","message":"PUT /api/order/4 500 - 53ms","method":"PUT","timestamp":"2025-12-21T16:09:43.004Z","url":"/api/order/4"}
+{"context":"OrderController","level":"error","message":"Error updating order with ID 4: Bind parameters must not contain undefined. To pass SQL NULL specify JS null","timestamp":"2025-12-21T16:10:21.069Z"}
+{"context":"HTTP","duration":"51 ms","ip":"::1","level":"error","message":"PUT /api/order/4 500 - 51ms","method":"PUT","timestamp":"2025-12-21T16:10:21.075Z","url":"/api/order/4"}
+{"context":"OrderController","level":"error","message":"Error updating order with ID 4: Incorrect integer value: '{\"id\":5,\"order_id\":\"4\",\"product_id\":\"2\",\"quantity\":1,\"price_at_order\":1000,\"notes\":null}' for column 'order_item_id' at row 1","timestamp":"2025-12-21T16:15:57.742Z"}
+{"context":"HTTP","duration":"92 ms","ip":"::1","level":"error","message":"PUT /api/order/4 500 - 92ms","method":"PUT","timestamp":"2025-12-21T16:15:57.749Z","url":"/api/order/4"}
+{"context":"OrderController","level":"error","message":"Error creating order: Bind parameters must not contain undefined. To pass SQL NULL specify JS null","timestamp":"2025-12-21T18:00:17.329Z"}
+{"context":"HTTP","duration":"43 ms","ip":"::1","level":"error","message":"POST /api/order 500 - 43ms","method":"POST","timestamp":"2025-12-21T18:00:17.331Z","url":"/api/order"}
+{"level":"error","message":"Login Error: Cannot destructure property 'username' of 'req.body' as it is undefined.","module":"AuthRoute","timestamp":"2025-12-21T18:08:22.073Z"}
+{"level":"error","message":"Login Error: Cannot destructure property 'username' of 'req.body' as it is undefined.","module":"AuthRoute","timestamp":"2025-12-21T18:12:27.608Z"}
+{"level":"error","message":"Login Error: Cannot destructure property 'username' of 'req.body' as it is undefined.","module":"AuthRoute","timestamp":"2025-12-21T18:12:32.434Z"}
+{"level":"error","message":"Login Error: Cannot destructure property 'username' of 'req.body' as it is undefined.","module":"AuthRoute","timestamp":"2025-12-21T18:14:44.635Z"}
+{"level":"error","message":"Login Error: Cannot destructure property 'username' of 'req.body' as it is undefined.","module":"AuthRoute","timestamp":"2025-12-21T18:16:16.261Z"}
+{"level":"error","message":"Login Error: Cannot destructure property 'username' of 'req.body' as it is undefined.","module":"AuthRoute","timestamp":"2025-12-21T18:17:49.311Z"}
+{"level":"error","message":"Login Error: Cannot destructure property 'username' of 'req.body' as it is undefined.","module":"AuthRoute","timestamp":"2025-12-21T18:18:32.475Z"}
+{"level":"error","message":"Login Error: Cannot destructure property 'username' of 'req.body' as it is undefined.","module":"AuthRoute","timestamp":"2025-12-21T18:19:53.723Z"}
+{"level":"error","message":"Login Error: Cannot destructure property 'username' of 'req.body' as it is undefined.","module":"AuthRoute","timestamp":"2025-12-21T18:19:54.181Z"}
+{"level":"error","message":"Login Error: Cannot destructure property 'username' of 'req.body' as it is undefined.","module":"AuthRoute","timestamp":"2025-12-21T18:20:59.903Z"}
+{"level":"error","message":"Login Error: Cannot destructure property 'username' of 'req.body' as it is undefined.","module":"AuthRoute","timestamp":"2025-12-21T18:21:52.498Z"}
+{"level":"error","message":"Login Error: Cannot destructure property 'username' of 'req.body' as it is undefined.","module":"AuthRoute","timestamp":"2025-12-21T18:22:48.379Z"}
