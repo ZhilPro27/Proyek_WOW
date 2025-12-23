@@ -92,7 +92,7 @@ const ProductList = () => {
                 <td>
                   {product.image_url ? (
                     <img 
-                      src={`${process.env.API_IMAGE_URL}/${product.image_url}`} 
+                      src={`${process.env.REACT_APP_API_IMAGE_URL}/${product.image_url}`} 
                       alt={product.name} 
                       style={{ width: '50px', height: '50px', objectFit: 'cover' }} 
                     />

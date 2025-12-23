@@ -148,7 +148,7 @@ const Menu = () => {
                 <div style={{height: '120px', overflow: 'hidden', position: 'relative'}} className="bg-secondary rounded-top">
                   {product.image_url ? (
                     <img 
-                      src={`${process.env.API_IMAGE_URL}/${product.image_url}`} 
+                      src={`${process.env.REACT_APP_API_IMAGE_URL}/${product.image_url}`} 
                       className={`w-100 h-100 ${!isAvailable ? 'grayscale' : ''}`} 
                       style={{objectFit: 'cover', filter: !isAvailable ? 'grayscale(100%)' : 'none'}} 
                       alt={product.name}
@@ -213,7 +213,7 @@ const Menu = () => {
               </div>
               <div className="modal-body">
                 {selectedProduct.image_url && (
-                  <img src={`${process.env.API_IMAGE_URL}/${selectedProduct.image_url}`} className="w-100 rounded mb-3" style={{maxHeight: '200px', objectFit: 'cover'}} alt="detail"/>
+                  <img src={`${process.env.REACT_APP_API_IMAGE_URL}/${selectedProduct.image_url}`} className="w-100 rounded mb-3" style={{maxHeight: '200px', objectFit: 'cover'}} alt="detail"/>
                 )}
                 <p className="text-muted small">{selectedProduct.description}</p>
                 

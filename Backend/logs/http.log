@@ -1102,3 +1102,8 @@
 {"context":"HTTP","duration":"4 ms","ip":"::1","level":"http","message":"GET /uploads/product-1766404610411.jpeg 304 - 4ms","method":"GET","timestamp":"2025-12-22T15:52:28.118Z","url":"/uploads/product-1766404610411.jpeg"}
 {"context":"HTTP","duration":"6 ms","ip":"::1","level":"http","message":"GET /uploads/product-1766404743616.jpeg 304 - 6ms","method":"GET","timestamp":"2025-12-22T15:52:28.121Z","url":"/uploads/product-1766404743616.jpeg"}
 {"context":"HTTP","duration":"2 ms","ip":"::1","level":"http","message":"GET /uploads/product-1766404952831.jpeg 304 - 2ms","method":"GET","timestamp":"2025-12-22T15:52:28.128Z","url":"/uploads/product-1766404952831.jpeg"}
+{"context":"HTTP","duration":"15 ms","ip":"::1","level":"warn","message":"GET / 404 - 15ms","method":"GET","timestamp":"2025-12-23T01:21:05.194Z","url":"/"}
+{"context":"HTTP","duration":"4 ms","ip":"::1","level":"warn","message":"GET /favicon.ico 404 - 4ms","method":"GET","timestamp":"2025-12-23T01:21:05.375Z","url":"/favicon.ico"}
+{"context":"HTTP","duration":"2 ms","ip":"::1","level":"warn","message":"GET / 404 - 2ms","method":"GET","timestamp":"2025-12-23T01:21:07.714Z","url":"/"}
+{"context":"HTTP","duration":"1 ms","ip":"::1","level":"warn","message":"GET / 404 - 1ms","method":"GET","timestamp":"2025-12-23T01:21:19.938Z","url":"/"}
+{"context":"HTTP","duration":"2 ms","ip":"::1","level":"warn","message":"GET / 404 - 2ms","method":"GET","timestamp":"2025-12-23T01:21:20.478Z","url":"/"}

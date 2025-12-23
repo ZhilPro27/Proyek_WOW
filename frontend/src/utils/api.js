@@ -3,7 +3,7 @@ import axios from 'axios';
 
 // Ganti URL sesuai port backend Anda
 const api = axios.create({
-  baseURL: process.env.API_URL,
+  baseURL: process.env.REACT_APP_API_URL,
 });
 
 // Interceptor: Otomatis pasang token JWT jika ada
