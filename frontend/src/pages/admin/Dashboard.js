@@ -11,6 +11,9 @@ import {
   Legend,
 } from 'chart.js';
 import { Bar } from 'react-chartjs-2';
+import dotenv from 'dotenv';
+
+dotenv.config();
 
 ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend);
 
@@ -185,7 +188,7 @@ const Dashboard = () => {
                 <li key={product.id} className="list-group-item d-flex justify-content-between align-items-center">
                   <div className="d-flex align-items-center">
                     {product.image_url ? (
-                      <img src={`http://localhost:3000/uploads/${product.image_url}`} alt="icon" 
+                      <img src={`${process.env.API_IMAGE_URL}/${product.image_url}`} alt="icon" 
                         style={{width: 30, height: 30, objectFit: 'cover', borderRadius: '4px'}} className="me-2"/>
                     ) : (
                       <div className="bg-secondary rounded me-2" style={{width: 30, height: 30}}></div>

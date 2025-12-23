@@ -2,6 +2,9 @@ import React, { useState, useEffect, useCallback } from 'react'; // 1. Tambah us
 import api from '../../utils/api';
 import { useNavigate, useParams } from 'react-router-dom';
 import { notifySuccess, notifyError } from '../../utils/notify';
+import dotenv from 'dotenv';
+
+dotenv.config();
 
 const ProductForm = () => {
   const navigate = useNavigate();
@@ -187,7 +190,7 @@ const ProductForm = () => {
                 {currentImage && !image && (
                   <div className="mt-2">
                     <small className="text-muted">Gambar saat ini: </small>
-                    <img src={`http://localhost:3000/uploads/${currentImage}`} alt="Preview" height="50" className="rounded" />
+                    <img src={`${process.env.API_IMAGE_URL}/${currentImage}`} alt="Preview" height="50" className="rounded" />
                   </div>
                 )}
               </div>

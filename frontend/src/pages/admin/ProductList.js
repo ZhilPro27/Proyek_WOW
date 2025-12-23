@@ -2,6 +2,9 @@ import React, { useEffect, useState } from 'react';
 import api from '../../utils/api';
 import { Link } from 'react-router-dom';
 import { notifyError, notifySuccess, confirmAction } from '../../utils/notify';
+import dotenv from 'dotenv';
+
+dotenv.config();
 
 const ProductList = () => {
   const [products, setProducts] = useState([]);
@@ -92,7 +95,7 @@ const ProductList = () => {
                 <td>
                   {product.image_url ? (
                     <img 
-                      src={`http://localhost:3000/uploads/${product.image_url}`} 
+                      src={`${process.env.API_IMAGE_URL}/${product.image_url}`} 
                       alt={product.name} 
                       style={{ width: '50px', height: '50px', objectFit: 'cover' }} 
                     />

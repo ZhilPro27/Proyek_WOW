@@ -1,9 +1,12 @@
 import axios from 'axios';
+import dotenv from 'dotenv';
+
+dotenv.config();
 
 
 // Ganti URL sesuai port backend Anda
 const api = axios.create({
-  baseURL: 'http://localhost:3000/api',
+  baseURL: process.env.API_URL,
 });
 
 // Interceptor: Otomatis pasang token JWT jika ada
