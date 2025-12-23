@@ -2,9 +2,6 @@ import React, { useState, useEffect } from 'react';
 import api from '../../utils/api';
 import { useSearchParams, useNavigate } from 'react-router-dom';
 import { notifySuccess } from '../../utils/notify'; // Opsional jika ingin pakai toast saat tambah
-import dotenv from 'dotenv';
-
-dotenv.config();
 
 const Menu = () => {
   const [searchParams] = useSearchParams();

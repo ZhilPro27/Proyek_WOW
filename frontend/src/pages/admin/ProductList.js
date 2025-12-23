@@ -2,9 +2,6 @@ import React, { useEffect, useState } from 'react';
 import api from '../../utils/api';
 import { Link } from 'react-router-dom';
 import { notifyError, notifySuccess, confirmAction } from '../../utils/notify';
-import dotenv from 'dotenv';
-
-dotenv.config();
 
 const ProductList = () => {
   const [products, setProducts] = useState([]);

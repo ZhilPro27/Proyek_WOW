@@ -2,9 +2,6 @@ import React, { useState, useEffect, useCallback } from 'react'; // 1. Tambah us
 import api from '../../utils/api';
 import { useNavigate, useParams } from 'react-router-dom';
 import { notifySuccess, notifyError } from '../../utils/notify';
-import dotenv from 'dotenv';
-
-dotenv.config();
 
 const ProductForm = () => {
   const navigate = useNavigate();
