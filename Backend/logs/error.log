@@ -145,3 +145,7 @@
 {"context":"HTTP","duration":"8 ms","ip":"::1","level":"error","message":"PUT /api/product/4/availability 500 - 8ms","method":"PUT","timestamp":"2025-12-22T15:43:34.654Z","url":"/api/product/4/availability"}
 {"context":"HTTP","duration":"19 ms","ip":"::1","level":"error","message":"PUT /api/product/4/availability 500 - 19ms","method":"PUT","timestamp":"2025-12-22T15:43:44.507Z","url":"/api/product/4/availability"}
 {"context":"HTTP","duration":"7 ms","ip":"::1","level":"error","message":"PUT /api/product/4/availability 500 - 7ms","method":"PUT","timestamp":"2025-12-22T15:46:34.590Z","url":"/api/product/4/availability"}
+{"context":"OrderController","level":"error","message":"Error fetching order by ID 10: result is not defined","timestamp":"2025-12-23T07:12:13.690Z"}
+{"context":"HTTP","duration":"160 ms","ip":"::1","level":"error","message":"GET /api/order/10 500 - 160ms","method":"GET","timestamp":"2025-12-23T07:12:13.713Z","url":"/api/order/10"}
+{"context":"OrderController","level":"error","message":"Error fetching order by ID 10: result is not defined","timestamp":"2025-12-23T07:12:13.722Z"}
+{"context":"HTTP","duration":"9 ms","ip":"::1","level":"error","message":"GET /api/order/10 500 - 9ms","method":"GET","timestamp":"2025-12-23T07:12:13.727Z","url":"/api/order/10"}

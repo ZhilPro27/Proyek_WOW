@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import api from '../../utils/api';
 import { notifySuccess, notifyError, confirmAction } from '../../utils/notify';
+import { printReceipt } from '../../utils/printHelper';
 
 const OrderHistory = () => {
   const [orders, setOrders] = useState([]);
   const [filteredOrders, setFilteredOrders] = useState([]);
-  const [filterStatus, setFilterStatus] = useState('all'); // all, completed, cancelled
+  const [filterStatus, setFilterStatus] = useState('all');
   
   // State untuk Modal Detail
   const [selectedOrder, setSelectedOrder] = useState(null);
@@ -44,6 +45,12 @@ const OrderHistory = () => {
   const handleCloseModal = () => {
     setShowModal(false);
     setSelectedOrder(null);
+  };
+
+  const handleManualPrint = (type) => {
+    if (selectedOrder) {
+      printReceipt(selectedOrder, type);
+    }
   };
 
   const updatePaymentStatus = async (orderId, currentStatus) => {
@@ -86,9 +93,10 @@ const OrderHistory = () => {
     <div className="container mt-4">
       <h2 className="mb-4">Riwayat Pesanan</h2>
 
-      {/* --- Filter Controls --- */}
+      {/* --- Filter Controls (Tidak Berubah) --- */}
       <div className="card shadow-sm mb-4">
-        <div className="card-body d-flex align-items-center gap-3">
+         {/* ... (kode filter sama seperti sebelumnya) ... */}
+         <div className="card-body d-flex align-items-center gap-3">
           <label className="fw-bold">Filter Status:</label>
           <select 
             className="form-select w-auto" 
@@ -108,10 +116,11 @@ const OrderHistory = () => {
         </div>
       </div>
 
-      {/* --- Tabel Riwayat --- */}
+      {/* --- Tabel Riwayat (Tidak Berubah) --- */}
       <div className="table-responsive card shadow-sm">
         <table className="table table-hover mb-0 align-middle">
-          <thead className="table-light">
+          {/* ... (isi tabel sama seperti sebelumnya) ... */}
+           <thead className="table-light">
             <tr>
               <th>ID</th>
               <th>Waktu</th>
@@ -137,19 +146,14 @@ const OrderHistory = () => {
                   <td className="fw-bold">Rp {parseInt(order.total_amount).toLocaleString('id-ID')}</td>
                   <td>
                       <div className="d-flex flex-column align-items-start gap-1">
-                        {/* Tombol Badge yang bisa diklik */}
                         <button 
                           className={`btn btn-sm badge ${order.payment_status === 'paid' ? 'btn-success' : 'btn-danger'} border-0`}
                           onClick={() => updatePaymentStatus(order.id, order.payment_status)}
-                          title="Klik untuk ubah status pembayaran"
                         >
                           {order.payment_status === 'paid' ? 'LUNAS (Paid)' : 'BELUM (Pending)'} 
                           <i className="bi bi-pencil-square ms-2"></i>
                         </button>
-                        
-                        <span className="text-muted small text-uppercase">
-                          via {order.payment_method}
-                        </span>
+                        <span className="text-muted small text-uppercase">via {order.payment_method}</span>
                       </div>
                     </td>
                   <td>
@@ -172,15 +176,13 @@ const OrderHistory = () => {
                 </tr>
               ))
             ) : (
-              <tr>
-                <td colSpan="8" className="text-center py-4 text-muted">Tidak ada data pesanan.</td>
-              </tr>
+              <tr><td colSpan="8" className="text-center py-4">Tidak ada data.</td></tr>
             )}
           </tbody>
         </table>
       </div>
 
-      {/* --- Modal Detail (Custom CSS Bootstrap Modal) --- */}
+      {/* --- Modal Detail --- */}
       {showModal && selectedOrder && (
         <div className="modal show d-block" style={{ backgroundColor: 'rgba(0,0,0,0.5)' }}>
           <div className="modal-dialog modal-dialog-centered">
@@ -190,36 +192,68 @@ const OrderHistory = () => {
                 <button type="button" className="btn-close" onClick={handleCloseModal}></button>
               </div>
               <div className="modal-body">
+                {/* ... (Isi Body Modal Sama) ... */}
                 <div className="d-flex justify-content-between mb-3">
                   <span><strong>Nama:</strong> {selectedOrder.customer_name}</span>
                   <span><strong>Meja:</strong> {selectedOrder.table_number}</span>
                 </div>
-                
                 <ul className="list-group mb-3">
-                  {selectedOrder.items && selectedOrder.items.map((item, idx) => (
-                    <li key={idx} className="list-group-item">
-                      <div className="d-flex justify-content-between">
-                        <span>{item.quantity}x {item.product_name}</span>
-                        <span>Rp {parseInt(item.price_at_order * item.quantity).toLocaleString('id-ID')}</span>
-                      </div>
+                  {selectedOrder.items && selectedOrder.items.map((item, idx) => {
                       
-                      {/* Varian */}
-                      {item.variants && item.variants.map((v, vIdx) => (
-                        <small key={vIdx} className="text-muted d-block ms-3">
-                          + {v.variant_name} (Rp {parseInt(v.variant_price).toLocaleString('id-ID')})
-                        </small>
-                      ))}
+                      // --- PERBAIKAN LOGIKA HARGA DI SINI ---
+                      const basePrice = parseFloat(item.price_at_order || 0);
+                      
+                      const variantsTotal = (item.variants && Array.isArray(item.variants))
+                        ? item.variants.reduce((sum, v) => sum + parseFloat(v.variant_price || 0), 0)
+                        : 0;
 
-                      {/* Notes */}
-                      {item.notes && <small className="text-danger d-block ms-3">Note: {item.notes}</small>}
-                    </li>
-                  ))}
+                      const subtotal = (basePrice + variantsTotal) * item.quantity;
+                      // ---------------------------------------
+
+                      return (
+                        <li key={idx} className="list-group-item">
+                          <div className="d-flex justify-content-between">
+                            <span>{item.quantity}x {item.product_name}</span>
+                            
+                            {/* Tampilkan Subtotal yang sudah dikoreksi */}
+                            <span className="fw-bold">Rp {parseInt(subtotal).toLocaleString('id-ID')}</span>
+                          </div>
+                          
+                          {/* Varian */}
+                          {item.variants && item.variants.map((v, vIdx) => (
+                            <small key={vIdx} className="text-muted d-block ms-3">
+                              + {v.variant_name} (Rp {parseInt(v.variant_price).toLocaleString('id-ID')})
+                            </small>
+                          ))}
+                          
+                          {/* Notes */}
+                          {item.notes && <small className="text-danger d-block ms-3">Note: {item.notes}</small>}
+                        </li>
+                      );
+                    })}
                 </ul>
-
                 <h5 className="text-end">Total: Rp {parseInt(selectedOrder.total_amount).toLocaleString('id-ID')}</h5>
               </div>
-              <div className="modal-footer">
-                <button type="button" className="btn btn-secondary" onClick={handleCloseModal}>Tutup</button>
+
+              <div className="modal-footer bg-light">
+                <button 
+                    type="button" 
+                    className="btn btn-warning"
+                    onClick={() => handleManualPrint('kitchen')}
+                >
+                    <i className="bi bi-printer-fill me-2"></i>Tiket Dapur
+                </button>
+
+                <button 
+                    type="button" 
+                    className="btn btn-primary"
+                    onClick={() => handleManualPrint('customer')}
+                >
+                    <i className="bi bi-receipt me-2"></i>Struk Kasir
+                </button>
+                <button type="button" className="btn btn-danger" onClick={() => handleCloseModal()}>
+                  Tutup
+                </button>
               </div>
             </div>
           </div>

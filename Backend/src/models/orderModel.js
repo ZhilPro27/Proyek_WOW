@@ -82,14 +82,79 @@ export const getAllOrders = async (conn) => {
 
 export const getOrderById = async (conn, orderId) => {
     logger.debug(`Fetching order with ID: ${orderId}`);
-    const sql = 'SELECT * FROM orders WHERE id = ?';
-    const [result] = await conn.execute(sql, [orderId]);
-    if (result.length === 0) {
-        logger.warn(`No order found with ID: ${orderId}`);
-        return null;
+    const sql = `
+        SELECT 
+            o.id AS order_id, 
+            o.table_number, 
+            o.customer_name, 
+            o.location, 
+            o.total_amount, 
+            o.payment_method, 
+            o.payment_status, 
+            o.order_status, 
+            o.created_at,
+            oi.id AS item_id, 
+            oi.quantity, 
+            oi.price_at_order, 
+            oi.notes,
+            p.name AS product_name,
+            oiv.id AS variant_id,
+            oiv.variant_name,
+            oiv.variant_price
+        FROM orders o
+        LEFT JOIN order_items oi ON o.id = oi.order_id
+        LEFT JOIN products p ON oi.product_id = p.id
+        LEFT JOIN order_item_variants oiv ON oi.id = oiv.order_item_id
+        WHERE o.id = ?
+    `;
+    const [rows] = await conn.execute(sql, [orderId]);
+    const ordersMap = new Map();
+
+    for (const row of rows) {
+        if (!ordersMap.has(row.order_id)) {
+            ordersMap.set(row.order_id, {
+                id: row.order_id,
+                table_number: row.table_number,
+                customer_name: row.customer_name,
+                location: row.location,
+                total_amount: row.total_amount,
+                payment_method: row.payment_method,
+                payment_status: row.payment_status,
+                order_status: row.order_status,
+                created_at: row.created_at,
+                items: [] 
+            });
+        }
+
+        const order = ordersMap.get(row.order_id);
+
+        if (row.item_id) {
+            let item = order.items.find(i => i.id === row.item_id);
+
+            if (!item) {
+                item = {
+                    id: row.item_id,
+                    product_name: row.product_name,
+                    quantity: row.quantity,
+                    price_at_order: row.price_at_order,
+                    notes: row.notes,
+                    variants: [] 
+                };
+                order.items.push(item);
+            }
+
+            if (row.variant_id) {
+                item.variants.push({
+                    id: row.variant_id,
+                    variant_name: row.variant_name,
+                    variant_price: row.variant_price
+                });
+            }
+        }
     }
+    const result = Array.from(ordersMap.values());
     logger.info(`Order found: ${JSON.stringify(result[0])}`);
-    return result[0];
+    return result;
 }
 
 export const createOrder = async (conn, orderData) => {
