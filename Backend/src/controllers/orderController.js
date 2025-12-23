@@ -202,3 +202,24 @@ export const updatePaymentStatus = async (req, res) => {
         logger.debug('Database connection released');
     }
 };
+
+export const getOrderStatus = async (req, res) => {
+    const orderId = req.params.id;
+    const conn = await db.getConnection();
+    logger.debug('Database connection established');
+    try {
+        const status = await orderModel.getOrderStatus(conn, orderId);
+        if (status === null) {
+            logger.warn(`Order not found for status fetch with ID: ${orderId}`);
+            return res.status(404).json({ error: 'Order Not Found' });
+        }
+        logger.debug(`Order status fetched for ID: ${orderId}`);
+        res.status(200).json({ order_status: status });
+    } catch (error) {
+        logger.error(`Error fetching order status for ID ${orderId}: ${error.message}`);
+        res.status(500).json({ error: 'Internal Server Error' });
+    } finally {
+        if (conn) conn.release();
+        logger.debug('Database connection released');
+    }
+};

@@ -14,7 +14,7 @@ const OrderStatus = () => {
 
     const fetchStatus = async () => {
       try {
-        const res = await api.get(`/order/${orderId}`);
+        const res = await api.get(`/order/${orderId}/getStatus`);
         setStatus(res.data.order_status);
       } catch (err) {
         console.error("Gagal cek status", err);

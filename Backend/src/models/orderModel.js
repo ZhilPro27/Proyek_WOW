@@ -147,3 +147,15 @@ export const updatePaymentStatus = async (conn, orderId, status) => {
     logger.info(`Payment status for ID: ${orderId} updated to ${status}`);
     return true;
 }
+
+export const getOrderStatus = async (conn, orderId) => {
+    logger.debug(`Fetching order status for ID: ${orderId}`);
+    const sql = 'SELECT order_status FROM orders WHERE id = ?';
+    const [result] = await conn.execute(sql, [orderId]);
+    if (result.length === 0) {
+        logger.warn(`No order found with ID: ${orderId}`);
+        return null;
+    }
+    logger.info(`Order status for ID: ${orderId} is ${result[0].order_status}`);
+    return result[0].order_status;
+}
