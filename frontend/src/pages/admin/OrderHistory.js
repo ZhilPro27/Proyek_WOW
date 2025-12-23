@@ -14,6 +14,18 @@ const OrderHistory = () => {
 
   const [searchQuery, setSearchQuery] = useState('');
 
+  const [showEditModal, setShowEditModal] = useState(false);
+  const [editFormData, setEditFormData] = useState({
+    id: '',
+    customer_name: '',
+    table_number: '',
+    order_status: '',
+    payment_status: '',
+    location: '',
+    payment_method: '',
+    total_amount: ''
+  });
+
   useEffect(() => {
     fetchOrders();
   }, []);
@@ -108,6 +120,40 @@ const OrderHistory = () => {
       }
     }
   }
+
+  const handleEditClick = (order) => {
+    setEditFormData({
+      id: order.id,
+      customer_name: order.customer_name,
+      table_number: order.table_number,
+      order_status: order.order_status,
+      payment_status: order.payment_status,
+      location: order.location,
+      payment_method: order.payment_method,
+      total_amount: order.total_amount
+    });
+    setShowEditModal(true);
+  };
+
+  const handleEditChange = (e) => {
+    setEditFormData({
+      ...editFormData,
+      [e.target.name]: e.target.value
+    });
+  };
+
+  const handleSaveEdit = async () => {
+    try {
+      await api.put(`/order/${editFormData.id}`, editFormData);
+      
+      notifySuccess("Data pesanan berhasil diperbarui!");
+      setShowEditModal(false);
+      fetchOrders(); // Refresh tabel agar data terbaru muncul
+    } catch (err) {
+      console.error(err);
+      notifyError("Gagal mengupdate pesanan.");
+    }
+  };
 
   return (
     <div className="container mt-4">
@@ -211,6 +257,9 @@ const OrderHistory = () => {
                     <button className="btn btn-sm btn-info text-white" onClick={() => handleShowDetail(order)}>
                       Detail
                     </button>
+                    <button className="btn btn-sm btn-warning text-white ms-2" onClick={() => handleEditClick(order)}>
+                      Edit
+                    </button>
                     <button className="btn btn-sm btn-danger ms-2" onClick={() => handleDelete(order.id)}>
                       Hapus
                     </button>
@@ -296,6 +345,80 @@ const OrderHistory = () => {
                 <button type="button" className="btn btn-danger" onClick={() => handleCloseModal()}>
                   Tutup
                 </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {showEditModal && (
+        <div className="modal show d-block" style={{ backgroundColor: 'rgba(0,0,0,0.5)' }}>
+          <div className="modal-dialog">
+            <div className="modal-content">
+              <div className="modal-header">
+                <h5 className="modal-title">Edit Pesanan #{editFormData.id}</h5>
+                <button type="button" className="btn-close" onClick={() => setShowEditModal(false)}></button>
+              </div>
+              <div className="modal-body">
+                <form>
+                  {/* Nama Pelanggan */}
+                  <div className="mb-3">
+                    <label className="form-label">Nama Pelanggan</label>
+                    <input 
+                      type="text" 
+                      className="form-control" 
+                      name="customer_name"
+                      value={editFormData.customer_name}
+                      onChange={handleEditChange}
+                    />
+                  </div>
+
+                  {/* Nomor Meja */}
+                  <div className="mb-3">
+                    <label className="form-label">Nomor Meja</label>
+                    <input 
+                      type="number" 
+                      className="form-control" 
+                      name="table_number"
+                      value={editFormData.table_number}
+                      onChange={handleEditChange}
+                    />
+                  </div>
+
+                  {/* Status Pesanan */}
+                  <div className="mb-3">
+                    <label className="form-label">Status Pesanan</label>
+                    <select 
+                      className="form-select" 
+                      name="order_status"
+                      value={editFormData.order_status}
+                      onChange={handleEditChange}
+                    >
+                      <option value="pending">Pending</option>
+                      <option value="processing">Sedang Dimasak (Processing)</option>
+                      <option value="completed">Selesai (Completed)</option>
+                      <option value="cancelled">Dibatalkan (Cancelled)</option>
+                    </select>
+                  </div>
+
+                  {/* Status Pembayaran */}
+                  <div className="mb-3">
+                    <label className="form-label">Status Pembayaran</label>
+                    <select 
+                      className="form-select" 
+                      name="payment_status"
+                      value={editFormData.payment_status}
+                      onChange={handleEditChange}
+                    >
+                      <option value="pending">Belum Bayar (Pending)</option>
+                      <option value="paid">Lunas (Paid)</option>
+                    </select>
+                  </div>
+                </form>
+              </div>
+              <div className="modal-footer">
+                <button type="button" className="btn btn-secondary" onClick={() => setShowEditModal(false)}>Batal</button>
+                <button type="button" className="btn btn-primary" onClick={handleSaveEdit}>Simpan Perubahan</button>
               </div>
             </div>
           </div>
