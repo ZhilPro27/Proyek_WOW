@@ -8,7 +8,9 @@ const logger = baseLogger.child({ module: 'authController' });
 export const login = async (req, res) => {
     const { username, password } = req.body;
     const conn = await db.getConnection();
-    logger.info(`Attempting login for user: ${username} with ip: ${req.ip}`);
+    const userIP = req.headers['x-forwarded-for'] || req.socket.remoteAddress || req.ip;
+    const cleanIP = userIP.replace('::ffff:', '');
+    logger.info(`Attempting login for user: ${username} with ip: ${cleanIP}`);
 
     try {
         const [users] = await conn.execute('SELECT * FROM users WHERE username = ?', [username]);
