@@ -12,18 +12,38 @@ const OrderHistory = () => {
   const [selectedOrder, setSelectedOrder] = useState(null);
   const [showModal, setShowModal] = useState(false);
 
+  const [searchQuery, setSearchQuery] = useState('');
+
   useEffect(() => {
     fetchOrders();
   }, []);
 
   // Filter berjalan setiap kali orders atau filterStatus berubah
   useEffect(() => {
+    let result = orders;
+
     if (filterStatus === 'all') {
       setFilteredOrders(orders);
     } else {
       setFilteredOrders(orders.filter(o => o.order_status === filterStatus));
     }
-  }, [orders, filterStatus]);
+
+    if (searchQuery) {
+      const lowerQuery = searchQuery.toLowerCase();
+      
+      result = result.filter(order => {
+        // Ambil nama (aman dari null)
+        const name = (order.customer_name || '').toLowerCase();
+        // Ambil ID string
+        const id = order.id.toString();
+
+        // Cek apakah nama ATAU ID mengandung kata kunci pencarian
+        return name.includes(lowerQuery) || id.includes(lowerQuery);
+      });
+    }
+
+    setFilteredOrders(result);
+  }, [orders, filterStatus, searchQuery]);
 
   const fetchOrders = async () => {
     try {
@@ -93,28 +113,50 @@ const OrderHistory = () => {
     <div className="container mt-4">
       <h2 className="mb-4">Riwayat Pesanan</h2>
 
-      {/* --- Filter Controls (Tidak Berubah) --- */}
-      <div className="card shadow-sm mb-4">
-         {/* ... (kode filter sama seperti sebelumnya) ... */}
-         <div className="card-body d-flex align-items-center gap-3">
-          <label className="fw-bold">Filter Status:</label>
-          <select 
-            className="form-select w-auto" 
-            value={filterStatus} 
-            onChange={(e) => setFilterStatus(e.target.value)}
-          >
-            <option value="all">Semua Status</option>
-            <option value="completed">Selesai (Completed)</option>
-            <option value="cancelled">Dibatalkan (Cancelled)</option>
-            <option value="pending">Pending</option>
-            <option value="processing">Sedang Dimasak</option>
-          </select>
+      {<div className="card shadow-sm mb-4">
+        <div className="card-body">
+          <div className="row g-3">
+            
+            {/* Bagian Search Bar (Kiri) */}
+            <div className="col-md-6 col-12">
+              <div className="input-group">
+                <span className="input-group-text bg-white border-end-0">
+                  <i className="bi bi-search text-muted"></i>
+                </span>
+                <input 
+                  type="text" 
+                  className="form-control border-start-0 ps-0" 
+                  placeholder="Cari nama pelanggan atau ID..." 
+                  value={searchQuery}
+                  onChange={(e) => setSearchQuery(e.target.value)}
+                />
+              </div>
+            </div>
+
+            {/* Bagian Filter Status (Kanan) */}
+            <div className="col-md-6 col-12 d-flex align-items-center justify-content-md-end gap-2">
+              <label className="fw-bold text-nowrap">Filter Status:</label>
+              <select 
+                className="form-select w-auto" 
+                value={filterStatus} 
+                onChange={(e) => setFilterStatus(e.target.value)}
+              >
+                <option value="all">Semua Status</option>
+                <option value="completed">Selesai (Completed)</option>
+                <option value="cancelled">Dibatalkan (Cancelled)</option>
+                <option value="pending">Pending</option>
+                <option value="processing">Sedang Dimasak</option>
+              </select>
+            </div>
+
+          </div>
           
-          <div className="ms-auto text-muted">
-            Total Transaksi: <strong>{filteredOrders.length}</strong>
+          {/* Info Total Data */}
+          <div className="mt-3 text-muted small">
+            Menampilkan <strong>{filteredOrders.length}</strong> dari <strong>{orders.length}</strong> transaksi
           </div>
         </div>
-      </div>
+      </div>}
 
       {/* --- Tabel Riwayat (Tidak Berubah) --- */}
       <div className="table-responsive card shadow-sm">
