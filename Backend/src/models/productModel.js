@@ -53,3 +53,15 @@ export const deleteProduct = async (conn, productId) => {
     logger.info(`Product with ID: ${productId} deleted successfully`);
     return true;
 }
+
+export const updateProductAvailability = async (conn, productId, isAvailable) => {
+    logger.debug(`Updating availability of product with ID: ${productId} to ${isAvailable}`);
+    const sql = 'UPDATE products SET is_available = ? WHERE id = ?';
+    const [result] = await conn.execute(sql, [isAvailable, productId]);
+    if (result.affectedRows === 0) {
+        logger.warn(`No product found to update availability with ID: ${productId}`);
+        return false;
+    }
+    logger.info(`Product with ID: ${productId} availability updated to ${isAvailable}`);
+    return true;
+}

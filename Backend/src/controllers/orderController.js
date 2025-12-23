@@ -158,3 +158,47 @@ export const deleteOrder = async (req, res) => {
         logger.debug('Database connection released');
     }
 };
+
+export const updateOrderStatus = async (req, res) => {
+    const orderId = req.params.id;
+    const { order_status } = req.body;
+    const conn = await db.getConnection();
+    logger.debug('Database connection established');
+    try {
+        const updated = await orderModel.updateOrderStatus(conn, orderId, order_status);
+        if (!updated) {
+            logger.warn(`Order not found for status update with ID: ${orderId}`);
+            return res.status(404).json({ error: 'Order Not Found' });
+        }
+        logger.debug(`Order status updated for ID: ${orderId}`);
+        res.status(200).json({ message: 'Order status updated successfully' });
+    } catch (error) {
+        logger.error(`Error updating order status for ID ${orderId}: ${error.message}`);
+        res.status(500).json({ error: 'Internal Server Error' });
+    } finally {
+        if (conn) conn.release();
+        logger.debug('Database connection released');
+    }
+};
+
+export const updatePaymentStatus = async (req, res) => {
+    const orderId = req.params.id;
+    const { payment_status } = req.body;
+    const conn = await db.getConnection();
+    logger.debug('Database connection established');
+    try {
+        const updated = await orderModel.updatePaymentStatus(conn, orderId, payment_status);
+        if (!updated) {
+            logger.warn(`Order not found for payment status update with ID: ${orderId}`);
+            return res.status(404).json({ error: 'Order Not Found' });
+        }
+        logger.debug(`Payment status updated for ID: ${orderId}`);
+        res.status(200).json({ message: 'Payment status updated successfully' });
+    } catch (error) {
+        logger.error(`Error updating payment status for ID ${orderId}: ${error.message}`);
+        res.status(500).json({ error: 'Internal Server Error' });
+    } finally {
+        if (conn) conn.release();
+        logger.debug('Database connection released');
+    }
+};

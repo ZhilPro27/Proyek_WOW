@@ -5,6 +5,7 @@ import multer from 'multer';
 import path from 'path';
 import fs from 'fs';
 import { fileURLToPath } from 'url';
+import { verifyToken } from '../middleware/authMiddleware.js';
 
 const router = express.Router();
 const logger = baseLogger.child({ module: 'ProductRoute' });
@@ -46,8 +47,9 @@ const upload = multer({
 
 router.get('/product', productController.getAllProducts);
 router.get('/product/:id', productController.getProductById);
-router.post('/product', upload.single('image'), productController.createProduct);
-router.put('/product/:id', upload.single('image'), productController.updateProduct);
-router.delete('/product/:id', productController.deleteProduct);
+router.post('/product', verifyToken, upload.single('image'), productController.createProduct);
+router.put('/product/:id', verifyToken, upload.single('image'), productController.updateProduct);
+router.delete('/product/:id', verifyToken, productController.deleteProduct);
+router.put('/product/:id/availability', verifyToken, productController.updateProductAvailability);
 
 export default router;

@@ -120,3 +120,29 @@ export const deleteProduct = async (req, res) => {
         logger.debug('Database connection released');
     }
 };
+
+export const updateProductAvailability = async (req, res) => {
+    const productId = req.params.id;
+    const { is_available } = req.body;
+    const conn = await db.getConnection();
+    logger.debug('Database connection established');
+    try {
+        await conn.beginTransaction();
+        const updated = await productsModel.updateProductAvailability(conn, productId, is_available);
+        if (!updated) {
+            logger.warn(`Product not found for availability update with ID: ${productId}`);
+            await conn.rollback();
+            return res.status(404).json({ error: 'Product Not Found' });
+        }
+        await conn.commit();
+        logger.debug(`Product availability updated with ID: ${productId}`);
+        res.status(200).json({ message: 'Product Availability Updated Successfully' });
+    } catch (error) {
+        await conn.rollback();
+        logger.error(`Error updating product availability with ID ${productId}: ${error.message}`);
+        res.status(500).json({ error: 'Internal Server Error' });
+    } finally {
+        if (conn) conn.release();
+        logger.debug('Database connection released');
+    }
+};
