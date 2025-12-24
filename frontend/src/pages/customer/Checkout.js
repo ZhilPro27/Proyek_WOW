@@ -77,7 +77,9 @@ const Checkout = () => {
             state: { 
                 orderId: newOrderId, 
                 totalAmount: payload.total_amount,
-                qris_image: res.data.qris_image 
+                qris_image: res.data.qris_image,
+                customerName, 
+                tableNumber 
             } 
         });
       } else{

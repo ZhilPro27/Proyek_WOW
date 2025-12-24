@@ -7,7 +7,7 @@ const PaymentQris = () => {
   const navigate = useNavigate();
   
   // Ambil data dari halaman checkout
-  const { orderId, totalAmount, qris_image } = location.state || {};
+  const { orderId, totalAmount, qris_image, customerName, tableNumber } = location.state || {};
 
   // Timer hitung mundur (15 menit) - Biar terlihat keren/urgen
   const [timeLeft, setTimeLeft] = useState(900); 
@@ -41,7 +41,10 @@ const PaymentQris = () => {
     showAlert("Terima kasih! Mohon tunggu konfirmasi dari kasir kami.");
     
     navigate('/customer/status', { 
-        state: { orderId: orderId } 
+        state: { orderId: orderId,
+            customerName: customerName,
+            tableNumber: tableNumber
+        } 
     });
   };
 
