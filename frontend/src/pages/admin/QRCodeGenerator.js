@@ -7,7 +7,7 @@ const QRCodeGenerator = () => {
   
   // Deteksi URL saat ini, tapi biarkan bisa diedit admin (penting untuk IP Address)
   // Default: http://localhost:3000 atau IP lokal network
-  const [baseUrl, setBaseUrl] = useState(`${window.location.protocol}//${window.location.hostname}:3000`);
+  const [baseUrl, setBaseUrl] = useState(`${window.location.protocol}//${window.location.hostname}`);
 
   const componentRef = useRef();
 

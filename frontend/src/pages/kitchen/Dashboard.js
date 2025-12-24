@@ -7,7 +7,7 @@ const KitchenDashboard = () => {
   // Setup Polling
   useEffect(() => {
     fetchOrders(); // Load pertama
-    const interval = setInterval(fetchOrders, 5000); // Ulangi tiap 5 detik
+    const interval = setInterval(fetchOrders, 30000); // Ulangi tiap 5 detik
     return () => clearInterval(interval); // Bersihkan saat unmount
   }, []);
 
@@ -40,7 +40,7 @@ const KitchenDashboard = () => {
     <div className="container-fluid p-4 bg-dark min-vh-100">
       <div className="d-flex justify-content-between align-items-center mb-4 text-white">
         <h2>🔥 Kitchen Display System</h2>
-        <span className="badge bg-secondary">Auto-refresh: 5s</span>
+        <span className="badge bg-secondary">Auto-refresh: 30s</span>
       </div>
 
       <div className="row">

@@ -71,15 +71,25 @@ const Checkout = () => {
       
       // Bersihkan cart
       localStorage.removeItem('wow_cart');
-      
-      // Redirect ke halaman sukses/lacak
-      navigate('/customer/status', { 
-        state: { 
-          orderId: newOrderId, // <--- PENTING: Kirim ID ini
-          customerName, 
-          tableNumber 
-        } 
+
+      if(paymentMethod === 'qris') {
+        navigate('/customer/payment-qris', { 
+            state: { 
+                orderId: newOrderId, 
+                totalAmount: payload.total_amount,
+                qris_image: res.data.qris_image 
+            } 
+        });
+      } else{
+        // Redirect ke halaman sukses/lacak
+        navigate('/customer/status', { 
+          state: { 
+            orderId: newOrderId, // <--- PENTING: Kirim ID ini
+            customerName, 
+            tableNumber 
+          } 
       });
+      }
     } catch (err) {
       console.error(err);
       notifyError('Gagal membuat pesanan. Silakan coba lagi.');

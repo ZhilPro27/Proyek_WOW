@@ -6,8 +6,8 @@ import { verifyToken } from '../middleware/authMiddleware.js';
 const router = express.Router();
 const logger = baseLogger.child({ module: 'OrderRoute' });
 
-router.get('/order',verifyToken, orderController.getAllOrders);
-router.get('/order/:id', verifyToken, orderController.getOrderById);
+router.get('/order', orderController.getAllOrders);
+router.get('/order/:id', orderController.getOrderById);
 router.post('/order', orderController.createOrder);
 router.put('/order/:id', verifyToken, orderController.updateOrder);
 router.delete('/order/:id', verifyToken, orderController.deleteOrder);

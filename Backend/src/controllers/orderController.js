@@ -3,8 +3,10 @@ import * as orderModel from '../models/orderModel.js';
 import * as orderItemModel from '../models/orderItemModel.js';
 import * as orderItemVariantModel from '../models/orderItemVariantModel.js';
 import baseLogger from '../utils/logger.js';
+import { generateDynamicQRIS } from '../utils/qrisHelper.js';
 
 const logger = baseLogger.child({ context: 'OrderController' });
+const qrisStatic = process.env.MY_STATIC_QRIS || '';
 
 export const getAllOrders = async (req, res) => {
     const conn = await db.getConnection();
@@ -74,8 +76,10 @@ export const createOrder = async (req, res) => {
             }
         }
         await conn.commit();
+        const totalBayar = orderInfo.total_amount;
+        const qrisData = await generateDynamicQRIS(qrisStatic, totalBayar);
         logger.debug(`Order created with ID: ${orderId}`);
-        res.status(201).json({ id: orderId });
+        res.status(201).json({ id: orderId, qris_image: qrisData.qr_image });
     } catch (error) {
         await conn.rollback();
         logger.error(`Error creating order: ${error.message}`);

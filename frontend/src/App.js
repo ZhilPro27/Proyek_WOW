@@ -20,6 +20,7 @@ import CustomerMenu from './pages/customer/Menu';
 import Checkout from './pages/customer/Checkout';
 import OrderStatus from './pages/customer/OrderStatus';
 import QRCodeGenerator from './pages/admin/QRCodeGenerator';
+import PaymentQris from './pages/customer/PaymentQris';
 
 // Layout Component agar Navbar selalu muncul setelah login
 const DashboardLayout = () => (
@@ -64,6 +65,7 @@ function App() {
         <Route path="/customer/menu" element={<CustomerMenu />} />
         <Route path="/customer/checkout" element={<Checkout />} />
         <Route path="/customer/status" element={<OrderStatus />} />
+        <Route path="/customer/payment-qris" element={<PaymentQris />} />
 
         {/* Route Admin */}
         <Route element={<ProtectedRoute allowedRole="admin"><DashboardLayout /></ProtectedRoute>}>
